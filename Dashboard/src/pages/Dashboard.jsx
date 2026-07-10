@@ -20,6 +20,7 @@ ChartJS.register(
 );
 
 const API_BASE = 'http://localhost:8000/api';
+const ANALYTICS_BASE = 'http://localhost:8081';
 
 export default function Dashboard() {
   const { token, logout, user } = useContext(AuthContext);
@@ -30,6 +31,10 @@ export default function Dashboard() {
   const [alerts, setAlerts] = useState([]);
   const [isConnected, setIsConnected] = useState(true);
   const [isLoading, setIsLoading] = useState(true);
+  const [trendData, setTrendData] = useState(null);
+  const [anomalies, setAnomalies] = useState([]);
+  const [analyticsLoading, setAnalyticsLoading] = useState(false);
+  const [analyticsError, setAnalyticsError] = useState(false);
 
   useEffect(() => {
     if (!token) {
@@ -143,6 +148,29 @@ export default function Dashboard() {
     }
   };
 
+  const loadAnalytics = async () => {
+    try {
+      setAnalyticsLoading(true);
+      setAnalyticsError(false);
+
+      // Fetch trend data
+      const trendRes = await fetch(`${ANALYTICS_BASE}/analytics/trend?metric=CPU_Usage&days=7`);
+      const trendDataFetch = trendRes.ok ? await trendRes.json() : null;
+
+      // Fetch anomalies
+      const anomaliesRes = await fetch(`${ANALYTICS_BASE}/analytics/anomalies?metric=Available_RAM&days=7`);
+      const anomaliesFetch = anomaliesRes.ok ? await anomaliesRes.json() : [];
+
+      setTrendData(trendDataFetch);
+      setAnomalies(Array.isArray(anomaliesFetch) ? anomaliesFetch : []);
+      setAnalyticsLoading(false);
+    } catch (e) {
+      console.error('[v0] Analytics fetch error:', e);
+      setAnalyticsError(true);
+      setAnalyticsLoading(false);
+    }
+  };
+
   useEffect(() => {
     const loadAll = async () => {
       setIsLoading(true);
@@ -151,8 +179,13 @@ export default function Dashboard() {
     };
 
     loadAll();
+    loadAnalytics();
     const interval = setInterval(loadLatest, 10000);
-    return () => clearInterval(interval);
+    const analyticsInterval = setInterval(loadAnalytics, 300000);
+    return () => {
+      clearInterval(interval);
+      clearInterval(analyticsInterval);
+    };
   }, [token]);
 
   const handleLogout = () => {
@@ -311,6 +344,67 @@ export default function Dashboard() {
                 </div>
               </div>
             ))}
+          </div>
+        )}
+      </div>
+
+      <div className="analytics-section">
+        <h3>📈 Predictive Analytics</h3>
+        {analyticsError && (
+          <p style={{ color: '#94a3b8', fontSize: '0.9rem', marginTop: '0.5rem' }}>
+            Analytics service unavailable
+          </p>
+        )}
+        {analyticsLoading ? (
+          <p style={{ color: '#94a3b8', fontSize: '0.9rem', marginTop: '0.5rem' }}>
+            Analyzing...
+          </p>
+        ) : (
+          <div style={{ display: 'flex', gap: '1.5rem', flexWrap: 'wrap' }}>
+            <div style={{
+              flex: '1 1 300px',
+              background: '#1e293b',
+              padding: '1rem',
+              borderRadius: '12px',
+              border: '1px solid #334155',
+            }}>
+              <h4 style={{ margin: '0 0 1rem', color: '#e2e8f0', fontSize: '1rem' }}>
+                CPU Trend Prediction
+              </h4>
+              {trendData ? (
+                <div style={{ fontSize: '0.9rem', color: '#cbd5e1', lineHeight: '1.8' }}>
+                  <div>Mean CPU (7d): <strong style={{ color: '#38bdf8' }}>{trendData.mean?.toFixed(1)}%</strong></div>
+                  <div>Std Deviation: <strong style={{ color: '#fbbf24' }}>{trendData.stdDev?.toFixed(1)}%</strong></div>
+                  <div>Predicted Next: <strong style={{ color: '#86efac' }}>{trendData.predictedNext?.toFixed(1)}%</strong></div>
+                </div>
+              ) : (
+                <p style={{ color: '#94a3b8', fontSize: '0.9rem' }}>No trend data available</p>
+              )}
+            </div>
+
+            <div style={{
+              flex: '1 1 300px',
+              background: '#1e293b',
+              padding: '1rem',
+              borderRadius: '12px',
+              border: '1px solid #334155',
+            }}>
+              <h4 style={{ margin: '0 0 1rem', color: '#e2e8f0', fontSize: '1rem' }}>
+                Recent Anomalies (RAM)
+              </h4>
+              {anomalies.length === 0 ? (
+                <p style={{ color: '#94a3b8', fontSize: '0.9rem' }}>No anomalies detected</p>
+              ) : (
+                <div style={{ fontSize: '0.85rem', color: '#cbd5e1', maxHeight: '150px', overflowY: 'auto' }}>
+                  {anomalies.map((anomaly, idx) => (
+                    <div key={idx} style={{ marginBottom: '0.5rem', paddingBottom: '0.5rem', borderBottom: '1px solid #334155' }}>
+                      <div style={{ color: '#94a3b8' }}>{new Date(anomaly.timestamp).toLocaleString()}</div>
+                      <div style={{ color: '#fca5a5' }}>Value: {anomaly.value?.toFixed(2)} MB</div>
+                    </div>
+                  ))}
+                </div>
+              )}
+            </div>
           </div>
         )}
       </div>
