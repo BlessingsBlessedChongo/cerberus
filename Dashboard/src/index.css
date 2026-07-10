@@ -68,7 +68,7 @@ body {
 
 .login-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   width: 100%;
   max-width: 1400px;
   height: 100vh;
@@ -79,7 +79,7 @@ body {
 
 /* LEFT SIDE - BRAND & TERMINAL */
 .login-left {
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -235,7 +235,7 @@ body {
   50%, 100% { opacity: 0; }
 }
 
-/* RIGHT SIDE - LOGIN FORM */
+/* LOGIN FORM */
 .login-right {
   display: flex;
   align-items: center;
@@ -243,6 +243,7 @@ body {
   padding: 3rem;
   background: linear-gradient(135deg, rgba(30, 41, 59, 0.9) 0%, rgba(15, 23, 42, 0.8) 100%);
   position: relative;
+  width: 100%;
 }
 
 .login-right::before {
@@ -381,6 +382,43 @@ body {
 
 .form-input:disabled {
   opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.password-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.password-wrapper .form-input {
+  flex: 1;
+  padding-right: 2.5rem;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-secondary);
+  transition: all 0.2s ease;
+  outline: none;
+}
+
+.password-toggle:hover:not(:disabled) {
+  color: var(--accent-cyan);
+  transform: scale(1.15);
+}
+
+.password-toggle:disabled {
+  opacity: 0.5;
   cursor: not-allowed;
 }
 

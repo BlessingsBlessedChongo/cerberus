@@ -9,31 +9,9 @@ export default function Login() {
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
   const [isLoading, setIsLoading] = useState(false);
-  const [terminalLines, setTerminalLines] = useState([]);
+  const [showPassword, setShowPassword] = useState(false);
   const { saveToken, saveUser } = useContext(AuthContext);
   const navigate = useNavigate();
-
-  useEffect(() => {
-    const terminalContent = [
-      '[CORE AGENT] C++ thread initialized on localhost:9000',
-      '[WATCHDOG] Writing metrics to watchdog.log... OK',
-      '[SENTINEL] Running C11 CRC32 integrity check on watchdog.log... MATCH',
-      '[ANALYTICS] Spring Boot anomaly detection active.',
-      '[CERBERUS] Three Heads. One Mission. Watch. Predict. Protect.',
-    ];
-
-    let index = 0;
-    const interval = setInterval(() => {
-      if (index < terminalContent.length) {
-        setTerminalLines((prev) => [...prev, terminalContent[index]]);
-        index++;
-      } else {
-        clearInterval(interval);
-      }
-    }, 400);
-
-    return () => clearInterval(interval);
-  }, []);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -76,49 +54,6 @@ export default function Login() {
   return (
     <div className="login-page">
       <div className="login-grid">
-        {/* Left Side: Brand & Terminal */}
-        <div className="login-left">
-          <div className="brand-section">
-            <div className="cerberus-logo">
-              <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                  <linearGradient id="shieldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" stopColor="#00FFCC" />
-                    <stop offset="100%" stopColor="#38BDF8" />
-                  </linearGradient>
-                </defs>
-                <path d="M50 10 L75 25 L75 50 Q75 75 50 90 Q25 75 25 50 L25 25 Z" fill="url(#shieldGradient)" strokeWidth="1.5" stroke="#00FFCC" />
-                <circle cx="35" cy="45" r="6" fill="#0B0F19" />
-                <circle cx="50" cy="55" r="6" fill="#0B0F19" />
-                <circle cx="65" cy="45" r="6" fill="#0B0F19" />
-              </svg>
-            </div>
-            <h1 className="brand-title">CERBERUS</h1>
-            <p className="brand-tagline">Three Heads. One Mission.<br />Watch. Predict. Protect.</p>
-          </div>
-
-          {/* Terminal Window */}
-          <div className="terminal-window">
-            <div className="terminal-header">
-              <div className="terminal-buttons">
-                <span className="terminal-btn red"></span>
-                <span className="terminal-btn yellow"></span>
-                <span className="terminal-btn green"></span>
-              </div>
-              <span className="terminal-title">system_logs.terminal</span>
-            </div>
-            <div className="terminal-body">
-              {terminalLines.map((line, idx) => (
-                <div key={idx} className="terminal-line">
-                  <span className="terminal-prompt">$</span> {line}
-                </div>
-              ))}
-              {terminalLines.length > 0 && <div className="terminal-cursor">_</div>}
-            </div>
-          </div>
-        </div>
-
-        {/* Right Side: Login Form */}
         <div className="login-right">
           <div className="login-card">
             <div className="login-card-inner">
@@ -149,16 +84,27 @@ export default function Login() {
 
                 <div className="form-group">
                   <label htmlFor="password" className="form-label">Password</label>
-                  <input
-                    id="password"
-                    type="password"
-                    className="form-input"
-                    placeholder="Enter your password"
-                    value={password}
-                    onChange={(e) => setPassword(e.target.value)}
-                    disabled={isLoading}
-                    required
-                  />
+                  <div className="password-wrapper">
+                    <input
+                      id="password"
+                      type={showPassword ? 'text' : 'password'}
+                      className="form-input"
+                      placeholder="Enter your password"
+                      value={password}
+                      onChange={(e) => setPassword(e.target.value)}
+                      disabled={isLoading}
+                      required
+                    />
+                    <button
+                      type="button"
+                      className="password-toggle"
+                      onClick={() => setShowPassword(!showPassword)}
+                      disabled={isLoading}
+                      aria-label={showPassword ? 'Hide password' : 'Show password'}
+                    >
+                      {showPassword ? '👁️' : '👁️‍🗨️'}
+                    </button>
+                  </div>
                 </div>
 
                 <button
