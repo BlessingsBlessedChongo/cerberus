@@ -1,4 +1,5 @@
 import { useState, useEffect, useContext } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { AuthContext } from '../context/AuthContext';
 import { Line } from 'react-chartjs-2';
 import {
@@ -10,23 +11,31 @@ import {
   Title,
   Tooltip,
   Legend,
+  Filler,
 } from 'chart.js';
 
 ChartJS.register(
   CategoryScale, LinearScale, PointElement,
-  LineElement, Title, Tooltip, Legend
+  LineElement, Title, Tooltip, Legend, Filler
 );
 
 const API_BASE = 'http://localhost:8000/api';
 
 export default function Dashboard() {
-  const { token, logout } = useContext(AuthContext);
+  const { token, logout, user } = useContext(AuthContext);
+  const navigate = useNavigate();
   const [latestMetrics, setLatestMetrics] = useState({});
   const [cpuHistory, setCpuHistory] = useState(null);
   const [ramHistory, setRamHistory] = useState(null);
   const [alerts, setAlerts] = useState([]);
   const [isConnected, setIsConnected] = useState(true);
   const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    if (!token) {
+      navigate('/login');
+    }
+  }, [token, navigate]);
 
   const fetchWithAuth = (url) => {
     return fetch(url, {
@@ -146,6 +155,11 @@ export default function Dashboard() {
     return () => clearInterval(interval);
   }, [token]);
 
+  const handleLogout = () => {
+    logout();
+    navigate('/login');
+  };
+
   const chartOptions = {
     responsive: true,
     maintainAspectRatio: true,
@@ -178,21 +192,51 @@ export default function Dashboard() {
 
   return (
     <div className="dashboard">
-      <header>
-        <h1>Cerberus Dashboard</h1>
+      <header className="dashboard-header">
+        <div className="header-left">
+          <div className="header-logo">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" className="logo-icon">
+              <defs>
+                <linearGradient id="headerGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stopColor="#00FFCC" />
+                  <stop offset="100%" stopColor="#38BDF8" />
+                </linearGradient>
+              </defs>
+              <path d="M50 10 L75 25 L75 50 Q75 75 50 90 Q25 75 25 50 L25 25 Z" fill="url(#headerGradient)" strokeWidth="1" stroke="#00FFCC" />
+              <circle cx="35" cy="45" r="4" fill="#0B0F19" />
+              <circle cx="50" cy="55" r="4" fill="#0B0F19" />
+              <circle cx="65" cy="45" r="4" fill="#0B0F19" />
+            </svg>
+          </div>
+          <div className="header-info">
+            <h1>CERBERUS</h1>
+            <p>Enterprise Monitoring Platform</p>
+          </div>
+        </div>
         <div className="header-right">
+          <div className="user-section">
+            <span className="user-icon">👤</span>
+            <span className="username">{user?.username || 'User'}</span>
+          </div>
           {isConnected ? (
-            <span className="status-indicator online">Connected</span>
+            <span className="status-indicator online">
+              <span className="status-dot"></span>
+              Connected
+            </span>
           ) : (
-            <span className="status-indicator offline">Disconnected</span>
+            <span className="status-indicator offline">
+              <span className="status-dot"></span>
+              Disconnected
+            </span>
           )}
-          <button onClick={logout} className="logout-btn">Logout</button>
+          <button onClick={handleLogout} className="logout-btn">Logout</button>
         </div>
       </header>
 
-      {isLoading && !isConnected && (
+      {!isConnected && (
         <div className="connection-notice">
-          ⚠ Unable to connect to backend API. Make sure the Django server is running at http://localhost:8000
+          <span className="notice-icon">⚠</span>
+          <span>Unable to connect to backend API. Make sure the Django server is running at http://localhost:8000</span>
         </div>
       )}
 
@@ -242,19 +286,26 @@ export default function Dashboard() {
         </div>
       </div>
 
-      <div className="alerts">
-        <h3>Recent Alerts</h3>
+      <div className="alerts-section">
+        <h3>Security & Alerts</h3>
         {alerts.length === 0 ? (
-          <p className="no-alerts">No alerts</p>
+          <div className="alerts-empty">
+            <div className="secure-icon">✓</div>
+            <p className="secure-message">System Secure: No active alerts</p>
+            <p className="secure-subtitle">All integrity checks passed</p>
+          </div>
         ) : (
-          <ul>
+          <div className="alerts-list">
             {alerts.map(alert => (
-              <li key={alert.id}>
-                <span className="alert-time">{new Date(alert.timestamp).toLocaleString()}</span>
-                <span className="alert-message">{alert.text_value || alert.value}</span>
-              </li>
+              <div key={alert.id} className="alert-item">
+                <div className="alert-badge">!</div>
+                <div className="alert-content">
+                  <span className="alert-time">{new Date(alert.timestamp).toLocaleString()}</span>
+                  <span className="alert-message">{alert.text_value || alert.value}</span>
+                </div>
+              </div>
             ))}
-          </ul>
+          </div>
         )}
       </div>
     </div>
