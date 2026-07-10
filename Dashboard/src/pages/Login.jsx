@@ -10,29 +10,60 @@ export default function Login() {
   const [error, setError] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const [terminalLines, setTerminalLines] = useState([]);
+  const [currentLineText, setCurrentLineText] = useState('');
+  const [showForm, setShowForm] = useState(false);
   const { saveToken, saveUser } = useContext(AuthContext);
   const navigate = useNavigate();
 
   useEffect(() => {
-    const terminalContent = [
+    const bootSequence = [
       '[CORE AGENT] C++ thread initialized on localhost:9000',
-      '[WATCHDOG] Writing metrics to watchdog.log... OK',
       '[SENTINEL] Running C11 CRC32 integrity check on watchdog.log... MATCH',
       '[ANALYTICS] Spring Boot anomaly detection active.',
       '[CERBERUS] Three Heads. One Mission. Watch. Predict. Protect.',
     ];
 
-    let index = 0;
-    const interval = setInterval(() => {
-      if (index < terminalContent.length) {
-        setTerminalLines((prev) => [...prev, terminalContent[index]]);
-        index++;
-      } else {
-        clearInterval(interval);
-      }
-    }, 400);
+    let lineIndex = 0;
+    let charIndex = 0;
+    const typingSpeed = 50; // 50ms per character as specified
+    const delayBetweenLines = 300; // delay after line completes before next line starts
+    const processingDelay = 500; // artificial processing delay mentioned in spec
 
-    return () => clearInterval(interval);
+    const typeCharacter = () => {
+      if (lineIndex < bootSequence.length) {
+        const currentLine = bootSequence[lineIndex];
+        
+        if (charIndex < currentLine.length) {
+          // Type one character
+          setCurrentLineText(currentLine.substring(0, charIndex + 1));
+          charIndex++;
+          setTimeout(typeCharacter, typingSpeed);
+        } else {
+          // Line complete, add to terminal lines
+          setTerminalLines((prev) => [...prev, currentLine]);
+          setCurrentLineText('');
+          charIndex = 0;
+          lineIndex++;
+
+          // Add processing delay after line 2 (after ANALYTICS line)
+          const delayAfterThisLine = lineIndex === 3 ? processingDelay : delayBetweenLines;
+
+          if (lineIndex < bootSequence.length) {
+            setTimeout(typeCharacter, delayAfterThisLine);
+          } else {
+            // Boot sequence complete, reveal form
+            setTimeout(() => setShowForm(true), delayAfterThisLine);
+          }
+        }
+      }
+    };
+
+    // Start typing animation on mount
+    setTimeout(typeCharacter, 300);
+
+    return () => {
+      // Cleanup any pending timeouts if needed
+    };
   }, []);
 
   const handleSubmit = async (e) => {
@@ -113,14 +144,19 @@ export default function Login() {
                   <span className="terminal-prompt">$</span> {line}
                 </div>
               ))}
-              {terminalLines.length > 0 && <div className="terminal-cursor">_</div>}
+              {currentLineText && (
+                <div className="terminal-line">
+                  <span className="terminal-prompt">$</span> {currentLineText}<span className="terminal-cursor">_</span>
+                </div>
+              )}
+              {currentLineText === '' && terminalLines.length > 0 && <div className="terminal-cursor">_</div>}
             </div>
           </div>
         </div>
 
         {/* Right Side: Login Form */}
         <div className="login-right">
-          <div className="login-card">
+          <div className={`login-card ${showForm ? 'visible' : 'hidden'}`}>
             <div className="login-card-inner">
               <h2 className="login-title">System Access</h2>
               <p className="login-subtitle">Authenticate to continue</p>

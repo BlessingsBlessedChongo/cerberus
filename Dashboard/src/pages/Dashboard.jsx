@@ -214,6 +214,12 @@ export default function Dashboard() {
           </div>
         </div>
         <div className="header-right">
+          {isConnected && alerts.length === 0 ? (
+            <span className="system-status nominal">
+              <span className="status-dot"></span>
+              SYSTEMS NOMINAL
+            </span>
+          ) : null}
           <div className="user-section">
             <span className="user-icon">👤</span>
             <span className="username">{user?.username || 'User'}</span>
