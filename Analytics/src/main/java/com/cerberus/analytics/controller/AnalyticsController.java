@@ -7,6 +7,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/analytics")
+@CrossOrigin(origins = "http://localhost:5173")   // Allow the React dev server
 public class AnalyticsController {
 
     private final AnalyticsService service;
