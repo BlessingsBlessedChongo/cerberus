@@ -1,0 +1,397 @@
+================================================================================
+   CERBERUS DASHBOARD - VISUAL LAYOUT GUIDE
+================================================================================
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│                        LOGIN PAGE (/login)                                  │
+│                     SPLIT-SCREEN LAYOUT (50/50)                             │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+DESKTOP VIEW (1200px+):
+
+┌────────────────────────────┬────────────────────────────────┐
+│                            │                                │
+│     [Logo - SVG Shield]    │   ┌─────────────────────────┐  │
+│          CERBERUS          │   │   System Access         │  │
+│                            │   ├─────────────────────────┤  │
+│  Three Heads. One Mission. │   │ [Username Field]        │  │
+│  Watch. Predict. Protect.  │   │ [Password Field]        │  │
+│                            │   │ [Access Dashboard Btn]  │  │
+│  ┌─────────────────────┐   │   │ Enterprise platform...  │  │
+│  │ system_logs.terminal│   │   └─────────────────────────┘  │
+│  │ ⦿ ⦾ ⦿              │   │                                │
+│  ├─────────────────────┤   │                                │
+│  │ $ [CORE AGENT]...   │   │                                │
+│  │ $ [WATCHDOG]...     │   │                                │
+│  │ $ [SENTINEL]...     │   │                                │
+│  │ $ [ANALYTICS]...    │   │                                │
+│  │ $ [CERBERUS]...     │   │                                │
+│  │ $ _                 │   │                                │
+│  └─────────────────────┘   │                                │
+│                            │                                │
+└────────────────────────────┴────────────────────────────────┘
+
+MOBILE VIEW (< 768px):
+
+┌────────────────────────────────────┐
+│   [Logo - SVG Shield]              │
+│          CERBERUS                  │
+│   Three Heads. One Mission...      │
+│                                    │
+│  ┌──────────────────────────────┐  │
+│  │ system_logs.terminal         │  │
+│  │ ⦿ ⦾ ⦿                        │  │
+│  ├──────────────────────────────┤  │
+│  │ $ [CORE AGENT]...            │  │
+│  │ $ [WATCHDOG]...              │  │
+│  │ $ [SENTINEL]...              │  │
+│  │ $ _                          │  │
+│  └──────────────────────────────┘  │
+│                                    │
+├────────────────────────────────────┤
+│   ┌──────────────────────────────┐ │
+│   │   System Access              │ │
+│   ├──────────────────────────────┤ │
+│   │ [Username]                   │ │
+│   │ [Password]                   │ │
+│   │ [Access Dashboard]           │ │
+│   └──────────────────────────────┘ │
+└────────────────────────────────────┘
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│                       DASHBOARD PAGE (/)                                     │
+│                    HEADER + CONTENT LAYOUT                                   │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+HEADER (Sticky):
+
+┌────────────────────────────────────────────────────────────────────────────┐
+│ [Logo] CERBERUS                    👤 User    [Connected] [Logout]          │
+│        Enterprise Monitoring                                                 │
+└────────────────────────────────────────────────────────────────────────────┘
+
+STATUS BANNER (if disconnected):
+
+┌────────────────────────────────────────────────────────────────────────────┐
+│ ⚠  Unable to connect to backend API. Ensure Django is running...           │
+└────────────────────────────────────────────────────────────────────────────┘
+
+METRICS ROW (3 Cards, responsive grid):
+
+┌──────────────────┬──────────────────┬──────────────────┐
+│   CPU USAGE      │  AVAILABLE RAM    │  DISK FREE (C:)  │
+├──────────────────┼──────────────────┼──────────────────┤
+│                  │                  │                  │
+│      45.2%       │    8,192 MB       │   256.50 GB      │
+│                  │                  │                  │
+└──────────────────┴──────────────────┴──────────────────┘
+
+ANALYTICS ROW (2 Charts, responsive grid):
+
+┌──────────────────────────────┬──────────────────────────────┐
+│   CPU HISTORY (24h)          │   RAM HISTORY (24h)          │
+├──────────────────────────────┼──────────────────────────────┤
+│                              │                              │
+│   [Line Chart with gradient] │   [Line Chart with gradient] │
+│   Cyan line, filled area     │   Amber line, filled area    │
+│   Dark grid, smooth curve    │   Dark grid, smooth curve    │
+│                              │                              │
+│   Time labels (HH:MM:SS)     │   Time labels (HH:MM:SS)     │
+│   Percentage on Y-axis       │   MB on Y-axis               │
+│                              │                              │
+└──────────────────────────────┴──────────────────────────────┘
+
+ALERTS ROW (Full width):
+
+┌────────────────────────────────────────────────────────────┐
+│ SECURITY & ALERTS                                          │
+├────────────────────────────────────────────────────────────┤
+│                                                            │
+│  Option A: No Alerts                                       │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │              ✓                                        │  │
+│  │   System Secure: No active alerts                    │  │
+│  │   All integrity checks passed                        │  │
+│  └──────────────────────────────────────────────────────┘  │
+│                                                            │
+│  Option B: With Alerts                                     │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │ ! │ 2024-01-15 14:30:00  │ CPU spike detected       │  │
+│  ├──────────────────────────────────────────────────────┤  │
+│  │ ! │ 2024-01-15 14:25:00  │ Disk usage critical      │  │
+│  └──────────────────────────────────────────────────────┘  │
+│                                                            │
+└────────────────────────────────────────────────────────────┘
+
+TABLET VIEW (768px):
+
+┌────────────────────────────────────────────────────────────┐
+│ [Logo] CERBERUS            👤 User    [Connected] [Logout] │
+├────────────────────────────────────────────────────────────┤
+│                                                            │
+│ ┌──────────────────────────────────────────────────────┐   │
+│ │   CPU USAGE                                          │   │
+│ │   45.2%                                              │   │
+│ └──────────────────────────────────────────────────────┘   │
+│                                                            │
+│ ┌──────────────────────────────────────────────────────┐   │
+│ │   AVAILABLE RAM                                      │   │
+│ │   8,192 MB                                           │   │
+│ └──────────────────────────────────────────────────────┘   │
+│                                                            │
+│ ┌──────────────────────────────────────────────────────┐   │
+│ │   DISK FREE (C:)                                     │   │
+│ │   256.50 GB                                          │   │
+│ └──────────────────────────────────────────────────────┘   │
+│                                                            │
+│ ┌──────────────────────────────────────────────────────┐   │
+│ │   CPU HISTORY (24h)                                  │   │
+│ │   [Line Chart]                                       │   │
+│ └──────────────────────────────────────────────────────┘   │
+│                                                            │
+│ ┌──────────────────────────────────────────────────────┐   │
+│ │   RAM HISTORY (24h)                                  │   │
+│ │   [Line Chart]                                       │   │
+│ └──────────────────────────────────────────────────────┘   │
+│                                                            │
+│ ┌──────────────────────────────────────────────────────┐   │
+│ │   SECURITY & ALERTS                                  │   │
+│ │   ✓ System Secure: No active alerts                  │   │
+│ └──────────────────────────────────────────────────────┘   │
+│                                                            │
+└────────────────────────────────────────────────────────────┘
+
+MOBILE VIEW (< 480px):
+
+┌──────────────────────────────┐
+│ [Logo] CERBERUS              │
+├──────────────────────────────┤
+│ 👤 User    [Connected]       │
+│            [Logout]          │
+├──────────────────────────────┤
+│                              │
+│ CPU USAGE                    │
+│ 45.2%                        │
+├──────────────────────────────┤
+│                              │
+│ AVAILABLE RAM                │
+│ 8,192 MB                     │
+├──────────────────────────────┤
+│                              │
+│ DISK FREE (C:)               │
+│ 256.50 GB                    │
+├──────────────────────────────┤
+│                              │
+│ CPU HISTORY (24h)            │
+│ [Line Chart]                 │
+├──────────────────────────────┤
+│                              │
+│ RAM HISTORY (24h)            │
+│ [Line Chart]                 │
+├──────────────────────────────┤
+│                              │
+│ SECURITY & ALERTS            │
+│ ✓ System Secure: No alerts   │
+│   All checks passed          │
+│                              │
+└──────────────────────────────┘
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│                        COMPONENT HIERARCHY                                   │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+App.jsx
+├── AuthContext.Provider
+│   └── BrowserRouter
+│       ├── /login → Login.jsx
+│       │   ├── Terminal (animated typing)
+│       │   ├── Form (username/password)
+│       │   ├── Error Alert (if login fails)
+│       │   └── Loading Spinner (while submitting)
+│       │
+│       └── / → Dashboard.jsx
+│           ├── Header
+│           │   ├── Logo & Branding
+│           │   ├── Username
+│           │   ├── Status Indicator
+│           │   └── Logout Button
+│           │
+│           ├── Connection Notice (if disconnected)
+│           │
+│           ├── Metrics Cards (3 cards)
+│           │   ├── CPU Usage Card
+│           │   ├── RAM Card
+│           │   └── Disk Card
+│           │
+│           ├── Charts Section (2 charts)
+│           │   ├── CPU History Chart
+│           │   └── RAM History Chart
+│           │
+│           └── Alerts Section
+│               ├── Secure Message (if no alerts)
+│               └── Alert List (if alerts exist)
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│                         STYLING HIERARCHY                                    │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+CSS Variables (Top of index.css):
+├── Colors (primary, surface, accent, text)
+├── Typography (fonts)
+└── Effects (shadows, transitions)
+
+Global Styles:
+├── HTML/Body (dark background, font setup)
+├── Box model (*, box-sizing: border-box)
+└── Base elements (buttons, inputs, text)
+
+Login Page Styles:
+├── .login-page (full viewport, gradient bg)
+├── .login-grid (50/50 grid layout)
+├── .login-left (brand + terminal)
+│   ├── .brand-section (logo, title, tagline)
+│   └── .terminal-window (animated terminal)
+│       ├── .terminal-header (mac buttons)
+│       ├── .terminal-body (scrollable logs)
+│       └── .terminal-line (animated text)
+└── .login-right (form)
+    ├── .login-card (glassmorphic card)
+    ├── .form-group (input wrapper)
+    ├── .form-input (styled inputs)
+    ├── .error-alert (red alert box)
+    └── .login-button (gradient button)
+
+Dashboard Styles:
+├── .dashboard (flex column layout)
+├── .dashboard-header (sticky header)
+│   ├── .header-left (logo + info)
+│   └── .header-right (user + status + logout)
+├── .cards (3-column grid)
+│   └── .card (glassmorphic card)
+├── .charts (2-column grid)
+│   └── .chart-container (chart wrapper)
+└── .alerts-section (full-width alerts)
+    ├── .alerts-empty (secure message)
+    └── .alerts-list (alert items)
+        └── .alert-item (individual alert)
+
+Animations (CSS @keyframes):
+├── @keyframes typeIn (text fade in)
+├── @keyframes blink (cursor blinking)
+├── @keyframes pulse (indicator pulsing)
+├── @keyframes spin (loading spinner)
+├── @keyframes scanlines (terminal effect)
+├── @keyframes floatBg (background drift)
+├── @keyframes slideDown (alert slide in)
+└── @keyframes scaleIn (element scale animation)
+
+Responsive Breakpoints:
+├── 1200px (desktop → tablet)
+├── 768px (tablet → mobile)
+└── 480px (small mobile)
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│                        COLOR USAGE GUIDE                                     │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Dark Backgrounds:
+  #0B0F19 (primary dark)     - Page background, deep areas
+  #0f172a (surface dark)     - Main background color
+  #1e293b (surface mid)      - Cards, components
+
+Light Text:
+  #e2e8f0 (text primary)     - Main text, headings
+  #94a3b8 (text secondary)   - Labels, subtitles
+  #64748b (text muted)       - Timestamps, hints
+
+Accent Colors:
+  #00FFCC (cyan)             - Primary UI, borders, accents
+  #38BDF8 (blue)             - Metrics, headings
+  #fbbf24 (amber)            - Secondary charts
+
+Status Colors:
+  #22c55e (green)            - Connected, secure
+  #ef4444 (red)              - Disconnected, errors
+
+Gradients:
+  Cyan → Blue                - Buttons, logos, headings
+  Dark → Mid                 - Card backgrounds
+  Transparent → Cyan        - Glassmorphic effects
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│                    INTERACTION FLOWS                                         │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+LOGIN FLOW:
+1. User lands on /login
+2. Terminal begins typing animation (400ms per line)
+3. User enters username & password
+4. User clicks "Access Dashboard" button
+5. Form disables, spinner shows
+6. Request sent to POST /api/auth/login/
+   ├─ Success: Token saved, navigate to /
+   └─ Failure: Error alert displays, form re-enables
+7. On /, user sees dashboard
+
+DASHBOARD FLOW:
+1. User logged in, sees dashboard
+2. On mount:
+   ├─ Load latest metrics
+   ├─ Load CPU history (24h)
+   ├─ Load RAM history (24h)
+   └─ Load alerts
+3. Chart renders with data
+4. Every 10 seconds: Latest metrics update
+5. Connection status updates based on fetch success
+6. If disconnected: Notice banner shows
+7. User clicks "Logout":
+   ├─ Clear token & user from localStorage
+   ├─ Clear context state
+   └─ Navigate to /login
+
+CARD INTERACTIONS:
+- Hover: Border color changes to cyan, shadow increases
+- Metrics update: Smooth number transition
+- Loading: Shows "--" while fetching
+
+CHART INTERACTIONS:
+- Hover: Tooltip shows exact values
+- Points: Highlight on hover
+- Legend: Click to toggle series
+
+ERROR HANDLING:
+- Network error → "Connection notice" banner
+- Invalid login → Red alert with error message
+- Missing data → Shows "--" or placeholder
+
+================================================================================
+   BREAKPOINT DETAILS
+================================================================================
+
+Desktop (1200px+):
+  - 3-column metric cards
+  - 2-column charts
+  - Horizontal header
+  - Full width optimized
+
+Tablet (768px - 1199px):
+  - 1 or 2 column metric cards
+  - 1 column charts
+  - Responsive header
+  - Reduced padding
+
+Mobile (480px - 767px):
+  - 1 column everything
+  - Stacked layout
+  - Compact padding
+  - Large touch targets
+
+Small Mobile (< 480px):
+  - Single column layout
+  - Minimal padding
+  - Readable font sizes
+  - Touch-optimized spacing
+
+================================================================================
+
+End of Visual Layout Guide
