@@ -12,3 +12,714 @@ Timestamp,Check,Value
 [2026-07-10 15:16:35] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:10.4 CPU_StdDev:9.1 CPU_Predicted:10.4
 [2026-07-10 15:16:35] Available_RAM: 1277 MB
 [2026-07-10 15:16:35] CPU_Usage: 20.6%
+=== CERBERUS CORE LOG ===
+Timestamp,Check,Value
+[2026-07-10 20:21:06] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:0.0 CPU_StdDev:0.0 CPU_Predicted:0.0
+[2026-07-10 20:21:07] Available_RAM: 1105 MB
+[2026-07-10 20:21:07] CPU_Usage: 0.0%
+[2026-07-10 20:21:16] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:0.0 CPU_StdDev:0.0 CPU_Predicted:0.0
+[2026-07-10 20:21:17] Available_RAM: 1123 MB
+[2026-07-10 20:21:17] CPU_Usage: 47.2%
+[2026-07-10 20:21:27] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:23.6 CPU_StdDev:33.4 CPU_Predicted:23.6
+[2026-07-10 20:21:27] Available_RAM: 1173 MB
+[2026-07-10 20:21:27] CPU_Usage: 47.4%
+[2026-07-10 20:21:37] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:31.5 CPU_StdDev:27.3 CPU_Predicted:31.5
+[2026-07-10 20:21:37] CPU_Usage: 53.3%
+[2026-07-10 20:21:37] Available_RAM: 1153 MB
+[2026-07-10 20:21:47] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:37.0 CPU_StdDev:24.8 CPU_Predicted:37.0
+[2026-07-10 20:21:47] CPU_Usage: 81.3%
+[2026-07-10 20:21:47] Available_RAM: 806 MB
+[2026-07-10 20:21:57] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:45.8 CPU_StdDev:29.2 CPU_Predicted:45.8
+[2026-07-10 20:21:57] Disk_Free_C: 40.25 GB
+[2026-07-10 20:21:57] Available_RAM: 881 MB
+[2026-07-10 20:21:57] CPU_Usage: 96.8%
+[2026-07-10 20:22:07] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:54.3 CPU_StdDev:33.4 CPU_Predicted:54.3
+[2026-07-10 20:22:08] Available_RAM: 1354 MB
+[2026-07-10 20:22:08] CPU_Usage: 95.2%
+[2026-07-10 20:22:17] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:60.2 CPU_StdDev:34.2 CPU_Predicted:60.2
+[2026-07-10 20:22:18] Available_RAM: 1303 MB
+[2026-07-10 20:22:18] CPU_Usage: 90.5%
+[2026-07-10 20:22:27] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:64.0 CPU_StdDev:33.4 CPU_Predicted:64.0
+[2026-07-10 20:22:28] Available_RAM: 1376 MB
+[2026-07-10 20:22:28] CPU_Usage: 87.1%
+[2026-07-10 20:22:37] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:66.5 CPU_StdDev:32.2 CPU_Predicted:66.5
+[2026-07-10 20:22:38] Available_RAM: 1269 MB
+[2026-07-10 20:22:38] CPU_Usage: 97.3%
+[2026-07-10 20:22:47] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:69.6 CPU_StdDev:31.9 CPU_Predicted:120.0
+[2026-07-10 20:22:48] Available_RAM: 1278 MB
+[2026-07-10 20:22:48] CPU_Usage: 82.4%
+[2026-07-10 20:22:57] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:70.8 CPU_StdDev:30.5 CPU_Predicted:115.5
+[2026-07-10 20:22:57] Disk_Free_C: 40.25 GB
+[2026-07-10 20:22:58] Available_RAM: 1459 MB
+[2026-07-10 20:22:58] CPU_Usage: 81.8%
+[2026-07-10 20:23:07] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:71.7 CPU_StdDev:29.2 CPU_Predicted:111.7
+[2026-07-10 20:23:09] CPU_Usage: 74.8%
+[2026-07-10 20:23:09] Available_RAM: 1473 MB
+[2026-07-10 20:23:17] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:71.9 CPU_StdDev:28.0 CPU_Predicted:106.5
+[2026-07-10 20:23:19] Available_RAM: 1262 MB
+[2026-07-10 20:23:19] CPU_Usage: 94.8%
+[2026-07-10 20:23:27] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:73.6 CPU_StdDev:27.6 CPU_Predicted:108.1
+[2026-07-10 20:23:29] Available_RAM: 1311 MB
+[2026-07-10 20:23:29] CPU_Usage: 84.5%
+[2026-07-10 20:23:37] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:74.3 CPU_StdDev:26.7 CPU_Predicted:106.4
+[2026-07-10 20:23:39] Available_RAM: 1373 MB
+[2026-07-10 20:23:39] CPU_Usage: 71.6%
+[2026-07-10 20:23:47] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:74.1 CPU_StdDev:25.8 CPU_Predicted:101.7
+[2026-07-10 20:23:49] Available_RAM: 1331 MB
+[2026-07-10 20:23:49] CPU_Usage: 81.2%
+[2026-07-10 20:23:57] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:74.5 CPU_StdDev:25.1 CPU_Predicted:100.1
+[2026-07-10 20:23:58] Disk_Free_C: 40.25 GB
+[2026-07-10 20:24:00] CPU_Usage: 95.3%
+[2026-07-10 20:24:00] Available_RAM: 1238 MB
+[2026-07-10 20:24:07] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:75.7 CPU_StdDev:24.8 CPU_Predicted:101.9
+[2026-07-10 20:24:10] Available_RAM: 1299 MB
+[2026-07-10 20:24:10] CPU_Usage: 76.9%
+[2026-07-10 20:24:17] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:75.8 CPU_StdDev:24.1 CPU_Predicted:99.4
+[2026-07-10 20:24:20] Available_RAM: 1175 MB
+[2026-07-10 20:24:20] CPU_Usage: 90.5%
+[2026-07-10 20:24:27] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:76.5 CPU_StdDev:23.7 CPU_Predicted:100.0
+[2026-07-10 20:24:31] Available_RAM: 1350 MB
+[2026-07-10 20:24:31] CPU_Usage: 75.7%
+[2026-07-10 20:24:37] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:76.5 CPU_StdDev:23.1 CPU_Predicted:97.6
+[2026-07-10 20:24:41] Available_RAM: 1777 MB
+[2026-07-10 20:24:41] CPU_Usage: 51.1%
+[2026-07-10 20:24:47] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:75.3 CPU_StdDev:23.2 CPU_Predicted:91.1
+[2026-07-10 20:24:51] Available_RAM: 1794 MB
+[2026-07-10 20:24:51] CPU_Usage: 42.2%
+[2026-07-10 20:24:57] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:73.9 CPU_StdDev:23.7 CPU_Predicted:83.9
+[2026-07-10 20:24:58] Disk_Free_C: 40.25 GB
+[2026-07-10 20:25:01] CPU_Usage: 44.6%
+[2026-07-10 20:25:01] Available_RAM: 1790 MB
+[2026-07-10 20:25:07] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:72.6 CPU_StdDev:23.9 CPU_Predicted:78.2
+[2026-07-10 20:25:11] Available_RAM: 1790 MB
+[2026-07-10 20:25:11] CPU_Usage: 40.1%
+[2026-07-10 20:25:17] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:71.3 CPU_StdDev:24.3 CPU_Predicted:72.6
+[2026-07-10 20:25:21] Available_RAM: 1789 MB
+[2026-07-10 20:25:21] CPU_Usage: 38.4%
+[2026-07-10 20:25:27] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:70.1 CPU_StdDev:24.7 CPU_Predicted:67.4
+[2026-07-10 20:25:31] Available_RAM: 1766 MB
+[2026-07-10 20:25:31] CPU_Usage: 41.2%
+[2026-07-10 20:25:37] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:69.0 CPU_StdDev:24.8 CPU_Predicted:63.3
+[2026-07-10 20:25:42] Available_RAM: 1712 MB
+[2026-07-10 20:25:42] CPU_Usage: 55.9%
+[2026-07-10 20:25:47] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:68.5 CPU_StdDev:24.5 CPU_Predicted:61.9
+[2026-07-10 20:25:52] Available_RAM: 1651 MB
+[2026-07-10 20:25:52] CPU_Usage: 57.8%
+[2026-07-10 20:25:57] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:68.2 CPU_StdDev:24.1 CPU_Predicted:60.8
+[2026-07-10 20:25:58] Disk_Free_C: 40.25 GB
+[2026-07-10 20:26:02] Available_RAM: 1411 MB
+[2026-07-10 20:26:02] CPU_Usage: 72.1%
+[2026-07-10 20:26:07] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:68.3 CPU_StdDev:23.7 CPU_Predicted:61.9
+[2026-07-10 20:26:12] Available_RAM: 1504 MB
+[2026-07-10 20:26:12] CPU_Usage: 20.9%
+[2026-07-10 20:26:17] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:66.8 CPU_StdDev:24.8 CPU_Predicted:56.2
+[2026-07-10 20:26:22] Available_RAM: 1487 MB
+[2026-07-10 20:26:22] CPU_Usage: 19.4%
+[2026-07-10 20:26:27] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:65.3 CPU_StdDev:25.8 CPU_Predicted:50.9
+[2026-07-10 20:26:32] Available_RAM: 1573 MB
+[2026-07-10 20:26:32] CPU_Usage: 16.2%
+[2026-07-10 20:26:37] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:63.8 CPU_StdDev:26.8 CPU_Predicted:45.8
+[2026-07-10 20:26:42] Available_RAM: 1619 MB
+[2026-07-10 20:26:42] CPU_Usage: 11.9%
+[2026-07-10 20:26:47] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:62.3 CPU_StdDev:27.9 CPU_Predicted:40.8
+[2026-07-10 20:26:52] Available_RAM: 1609 MB
+[2026-07-10 20:26:52] CPU_Usage: 10.9%
+[2026-07-10 20:26:57] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:60.8 CPU_StdDev:28.8 CPU_Predicted:36.1
+[2026-07-10 20:26:58] Disk_Free_C: 40.25 GB
+[2026-07-10 20:27:03] Available_RAM: 1601 MB
+[2026-07-10 20:27:03] CPU_Usage: 13.2%
+[2026-07-10 20:27:07] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:59.5 CPU_StdDev:29.5 CPU_Predicted:32.2
+[2026-07-10 20:27:13] Available_RAM: 1625 MB
+[2026-07-10 20:27:13] CPU_Usage: 9.5%
+[2026-07-10 20:27:17] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:58.1 CPU_StdDev:30.2 CPU_Predicted:28.3
+[2026-07-10 20:27:23] Available_RAM: 1638 MB
+[2026-07-10 20:27:23] CPU_Usage: 10.0%
+[2026-07-10 20:27:27] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:56.9 CPU_StdDev:30.8 CPU_Predicted:24.8
+[2026-07-10 20:27:33] Available_RAM: 1636 MB
+[2026-07-10 20:27:33] CPU_Usage: 11.0%
+[2026-07-10 20:27:37] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:55.7 CPU_StdDev:31.3 CPU_Predicted:21.7
+[2026-07-10 20:27:43] Available_RAM: 1601 MB
+[2026-07-10 20:27:43] CPU_Usage: 15.4%
+[2026-07-10 20:27:47] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:54.7 CPU_StdDev:31.5 CPU_Predicted:19.4
+[2026-07-10 20:27:53] Available_RAM: 1632 MB
+[2026-07-10 20:27:53] CPU_Usage: 12.4%
+[2026-07-10 20:27:57] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:53.7 CPU_StdDev:31.8 CPU_Predicted:17.0
+[2026-07-10 20:27:59] Disk_Free_C: 40.25 GB
+[2026-07-10 20:28:03] Available_RAM: 1619 MB
+[2026-07-10 20:28:03] CPU_Usage: 16.1%
+[2026-07-10 20:28:07] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:52.8 CPU_StdDev:31.9 CPU_Predicted:15.2
+[2026-07-10 20:28:13] Available_RAM: 1605 MB
+[2026-07-10 20:28:13] CPU_Usage: 11.0%
+[2026-07-10 20:28:17] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:51.8 CPU_StdDev:32.2 CPU_Predicted:13.0
+[2026-07-10 20:28:23] Available_RAM: 1571 MB
+[2026-07-10 20:28:23] CPU_Usage: 26.6%
+[2026-07-10 20:28:27] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:51.2 CPU_StdDev:32.0 CPU_Predicted:12.5
+[2026-07-10 20:28:33] Available_RAM: 1411 MB
+[2026-07-10 20:28:33] CPU_Usage: 43.4%
+[2026-07-10 20:28:37] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:51.0 CPU_StdDev:31.7 CPU_Predicted:13.5
+[2026-07-10 20:28:44] Available_RAM: 1452 MB
+[2026-07-10 20:28:44] CPU_Usage: 62.1%
+[2026-07-10 20:28:47] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:51.3 CPU_StdDev:31.4 CPU_Predicted:16.1
+[2026-07-10 20:28:54] Available_RAM: 1521 MB
+[2026-07-10 20:28:54] CPU_Usage: 35.7%
+[2026-07-10 20:28:57] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:51.0 CPU_StdDev:31.1 CPU_Predicted:16.3
+[2026-07-10 20:28:59] Disk_Free_C: 40.25 GB
+[2026-07-10 20:29:04] Available_RAM: 1467 MB
+[2026-07-10 20:29:04] CPU_Usage: 32.7%
+[2026-07-10 20:29:07] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:50.6 CPU_StdDev:30.9 CPU_Predicted:16.2
+[2026-07-10 20:29:14] CPU_Usage: 57.2%
+[2026-07-10 20:29:14] Available_RAM: 1452 MB
+[2026-07-10 20:29:17] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:50.7 CPU_StdDev:30.6 CPU_Predicted:18.2
+[2026-07-10 20:29:25] Available_RAM: 1422 MB
+[2026-07-10 20:29:25] CPU_Usage: 55.0%
+[2026-07-10 20:29:27] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:50.8 CPU_StdDev:30.3 CPU_Predicted:19.8
+[2026-07-10 20:29:35] Available_RAM: 1419 MB
+[2026-07-10 20:29:35] CPU_Usage: 62.1%
+[2026-07-10 20:29:37] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:51.0 CPU_StdDev:30.0 CPU_Predicted:21.9
+[2026-07-10 20:29:45] Available_RAM: 1281 MB
+[2026-07-10 20:29:45] CPU_Usage: 44.9%
+[2026-07-10 20:29:47] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:50.9 CPU_StdDev:29.7 CPU_Predicted:22.5
+[2026-07-10 20:29:55] Available_RAM: 1355 MB
+[2026-07-10 20:29:55] CPU_Usage: 41.6%
+[2026-07-10 20:29:57] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:50.7 CPU_StdDev:29.5 CPU_Predicted:22.9
+[2026-07-10 20:29:59] Disk_Free_C: 40.25 GB
+[2026-07-10 20:30:05] Available_RAM: 1281 MB
+[2026-07-10 20:30:05] CPU_Usage: 46.4%
+[2026-07-10 20:30:07] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:50.6 CPU_StdDev:29.2 CPU_Predicted:23.6
+[2026-07-10 20:30:15] Available_RAM: 1140 MB
+[2026-07-10 20:30:15] CPU_Usage: 51.3%
+[2026-07-10 20:30:17] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:50.7 CPU_StdDev:28.9 CPU_Predicted:24.7
+[2026-07-10 20:30:25] CPU_Usage: 74.8%
+[2026-07-10 20:30:25] Available_RAM: 1096 MB
+[2026-07-10 20:30:27] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:51.1 CPU_StdDev:28.9 CPU_Predicted:27.3
+[2026-07-10 20:30:36] Available_RAM: 1232 MB
+[2026-07-10 20:30:36] CPU_Usage: 67.7%
+[2026-07-10 20:30:37] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:51.4 CPU_StdDev:28.7 CPU_Predicted:29.3
+[2026-07-10 20:30:46] Available_RAM: 1270 MB
+[2026-07-10 20:30:46] CPU_Usage: 59.7%
+[2026-07-10 20:30:47] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:51.5 CPU_StdDev:28.4 CPU_Predicted:30.6
+[2026-07-10 20:30:56] Available_RAM: 1288 MB
+[2026-07-10 20:30:56] CPU_Usage: 77.7%
+[2026-07-10 20:30:57] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:52.0 CPU_StdDev:28.4 CPU_Predicted:33.1
+[2026-07-10 20:30:59] Disk_Free_C: 40.24 GB
+[2026-07-10 20:31:06] Available_RAM: 1400 MB
+[2026-07-10 20:31:06] CPU_Usage: 92.8%
+[2026-07-10 20:31:07] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:52.6 CPU_StdDev:28.7 CPU_Predicted:36.5
+[2026-07-10 20:31:16] Available_RAM: 1469 MB
+[2026-07-10 20:31:16] CPU_Usage: 54.5%
+[2026-07-10 20:31:17] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:52.7 CPU_StdDev:28.4 CPU_Predicted:37.1
+[2026-07-10 20:31:26] Available_RAM: 1555 MB
+[2026-07-10 20:31:26] CPU_Usage: 51.3%
+[2026-07-10 20:31:27] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:52.7 CPU_StdDev:28.2 CPU_Predicted:37.5
+[2026-07-10 20:31:36] Available_RAM: 1567 MB
+[2026-07-10 20:31:36] CPU_Usage: 34.3%
+[2026-07-10 20:31:37] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:52.4 CPU_StdDev:28.1 CPU_Predicted:36.9
+[2026-07-10 20:31:47] Available_RAM: 1579 MB
+[2026-07-10 20:31:47] CPU_Usage: 25.3%
+[2026-07-10 20:31:47] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:51.9 CPU_StdDev:28.0 CPU_Predicted:35.7
+[2026-07-10 20:31:57] Available_RAM: 1587 MB
+[2026-07-10 20:31:57] CPU_Usage: 38.2%
+[2026-07-10 20:31:57] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:51.7 CPU_StdDev:27.9 CPU_Predicted:35.3
+[2026-07-10 20:31:59] Disk_Free_C: 40.24 GB
+[2026-07-10 20:32:07] Available_RAM: 1467 MB
+[2026-07-10 20:32:07] CPU_Usage: 38.5%
+[2026-07-10 20:32:07] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:51.5 CPU_StdDev:27.7 CPU_Predicted:35.0
+[2026-07-10 20:32:17] Available_RAM: 1221 MB
+[2026-07-10 20:32:17] CPU_Usage: 63.2%
+[2026-07-10 20:32:17] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:51.7 CPU_StdDev:27.5 CPU_Predicted:36.2
+[2026-07-10 20:32:27] CPU_Usage: 64.2%
+[2026-07-10 20:32:27] Available_RAM: 937 MB
+[2026-07-10 20:32:27] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:51.9 CPU_StdDev:27.4 CPU_Predicted:37.4
+[2026-07-10 20:32:37] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:51.9 CPU_StdDev:27.4 CPU_Predicted:37.4
+[2026-07-10 20:32:37] Available_RAM: 1443 MB
+[2026-07-10 20:32:37] CPU_Usage: 67.0%
+[2026-07-10 20:32:47] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:52.1 CPU_StdDev:27.2 CPU_Predicted:38.7
+[2026-07-10 20:32:48] Available_RAM: 1243 MB
+[2026-07-10 20:32:48] CPU_Usage: 48.5%
+[2026-07-10 20:32:57] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:52.1 CPU_StdDev:27.0 CPU_Predicted:38.9
+[2026-07-10 20:32:58] Available_RAM: 1385 MB
+[2026-07-10 20:32:58] CPU_Usage: 75.7%
+[2026-07-10 20:33:00] Disk_Free_C: 40.24 GB
+[2026-07-10 20:33:07] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:52.4 CPU_StdDev:27.0 CPU_Predicted:40.6
+[2026-07-10 20:33:08] CPU_Usage: 70.7%
+[2026-07-10 20:33:08] Available_RAM: 1448 MB
+[2026-07-10 20:33:17] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:52.6 CPU_StdDev:26.9 CPU_Predicted:41.9
+[2026-07-10 20:33:18] Available_RAM: 1218 MB
+[2026-07-10 20:33:18] CPU_Usage: 72.1%
+[2026-07-10 20:33:27] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:52.9 CPU_StdDev:26.8 CPU_Predicted:43.3
+[2026-07-10 20:33:28] Available_RAM: 1163 MB
+[2026-07-10 20:33:28] CPU_Usage: 79.5%
+[2026-07-10 20:33:37] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:53.3 CPU_StdDev:26.8 CPU_Predicted:45.0
+[2026-07-10 20:33:38] CPU_Usage: 71.3%
+[2026-07-10 20:33:38] Available_RAM: 1284 MB
+[2026-07-10 20:33:47] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:53.5 CPU_StdDev:26.7 CPU_Predicted:46.1
+[2026-07-10 20:33:49] Available_RAM: 1349 MB
+[2026-07-10 20:33:49] CPU_Usage: 68.5%
+[2026-07-10 20:33:57] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:53.7 CPU_StdDev:26.6 CPU_Predicted:47.1
+[2026-07-10 20:33:59] Available_RAM: 1184 MB
+[2026-07-10 20:33:59] CPU_Usage: 80.4%
+[2026-07-10 20:34:00] Disk_Free_C: 40.24 GB
+[2026-07-10 20:34:07] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:54.0 CPU_StdDev:26.6 CPU_Predicted:48.7
+[2026-07-10 20:34:09] Available_RAM: 1183 MB
+[2026-07-10 20:34:09] CPU_Usage: 84.3%
+[2026-07-10 20:34:17] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:54.4 CPU_StdDev:26.6 CPU_Predicted:50.4
+[2026-07-10 20:34:19] Available_RAM: 1451 MB
+[2026-07-10 20:34:19] CPU_Usage: 34.6%
+[2026-07-10 20:34:27] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:54.2 CPU_StdDev:26.5 CPU_Predicted:49.5
+[2026-07-10 20:34:29] Available_RAM: 1570 MB
+[2026-07-10 20:34:29] CPU_Usage: 10.8%
+[2026-07-10 20:34:37] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:53.6 CPU_StdDev:26.8 CPU_Predicted:47.4
+[2026-07-10 20:34:39] Available_RAM: 1714 MB
+[2026-07-10 20:34:39] CPU_Usage: 14.7%
+[2026-07-10 20:34:47] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:53.2 CPU_StdDev:27.0 CPU_Predicted:45.7
+[2026-07-10 20:34:49] Available_RAM: 1384 MB
+[2026-07-10 20:34:49] CPU_Usage: 55.1%
+[2026-07-10 20:34:57] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:53.2 CPU_StdDev:26.8 CPU_Predicted:45.9
+[2026-07-10 20:35:00] Available_RAM: 1601 MB
+[2026-07-10 20:35:00] CPU_Usage: 29.8%
+[2026-07-10 20:35:00] Disk_Free_C: 40.24 GB
+[2026-07-10 20:35:07] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:52.9 CPU_StdDev:26.8 CPU_Predicted:45.0
+[2026-07-10 20:35:10] Available_RAM: 1697 MB
+[2026-07-10 20:35:10] CPU_Usage: 14.0%
+[2026-07-10 20:35:17] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:52.4 CPU_StdDev:26.9 CPU_Predicted:43.3
+[2026-07-10 20:35:20] Available_RAM: 1712 MB
+[2026-07-10 20:35:20] CPU_Usage: 13.2%
+[2026-07-10 20:35:27] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:52.0 CPU_StdDev:27.1 CPU_Predicted:41.7
+[2026-07-10 20:35:30] Available_RAM: 1742 MB
+[2026-07-10 20:35:30] CPU_Usage: 13.4%
+[2026-07-10 20:35:37] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:51.5 CPU_StdDev:27.3 CPU_Predicted:40.1
+[2026-07-10 20:35:40] Available_RAM: 1746 MB
+[2026-07-10 20:35:40] CPU_Usage: 13.6%
+[2026-07-10 20:35:47] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:51.1 CPU_StdDev:27.4 CPU_Predicted:38.6
+[2026-07-10 20:35:50] CPU_Usage: 19.9%
+[2026-07-10 20:35:50] Available_RAM: 1697 MB
+[2026-07-10 20:35:57] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:50.7 CPU_StdDev:27.5 CPU_Predicted:37.5
+[2026-07-10 20:36:00] Available_RAM: 1680 MB
+[2026-07-10 20:36:00] CPU_Usage: 14.8%
+[2026-07-10 20:36:00] Disk_Free_C: 40.24 GB
+[2026-07-10 20:36:07] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:50.3 CPU_StdDev:27.6 CPU_Predicted:36.2
+[2026-07-10 20:36:10] Available_RAM: 1691 MB
+[2026-07-10 20:36:10] CPU_Usage: 10.8%
+[2026-07-10 20:36:17] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:49.9 CPU_StdDev:27.7 CPU_Predicted:34.8
+[2026-07-10 20:36:20] Available_RAM: 1663 MB
+[2026-07-10 20:36:20] CPU_Usage: 16.3%
+[2026-07-10 20:36:27] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:49.5 CPU_StdDev:27.8 CPU_Predicted:33.6
+[2026-07-10 20:36:31] Available_RAM: 1637 MB
+[2026-07-10 20:36:31] CPU_Usage: 29.2%
+[2026-07-10 20:36:37] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:49.3 CPU_StdDev:27.7 CPU_Predicted:33.1
+[2026-07-10 20:36:41] Available_RAM: 1598 MB
+[2026-07-10 20:36:41] CPU_Usage: 33.4%
+[2026-07-10 20:36:47] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:49.1 CPU_StdDev:27.6 CPU_Predicted:32.7
+[2026-07-10 20:36:51] Available_RAM: 1641 MB
+[2026-07-10 20:36:51] CPU_Usage: 16.2%
+[2026-07-10 20:36:57] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:48.8 CPU_StdDev:27.7 CPU_Predicted:31.7
+[2026-07-10 20:37:00] Disk_Free_C: 40.23 GB
+[2026-07-10 20:37:01] Available_RAM: 1628 MB
+[2026-07-10 20:37:01] CPU_Usage: 23.1%
+[2026-07-10 20:37:07] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:48.5 CPU_StdDev:27.7 CPU_Predicted:31.0
+[2026-07-10 20:37:11] Available_RAM: 1637 MB
+[2026-07-10 20:37:11] CPU_Usage: 17.9%
+[2026-07-10 20:37:17] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:48.2 CPU_StdDev:27.7 CPU_Predicted:30.1
+[2026-07-10 20:37:21] Available_RAM: 1667 MB
+[2026-07-10 20:37:21] CPU_Usage: 15.8%
+[2026-07-10 20:37:28] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:47.9 CPU_StdDev:27.8 CPU_Predicted:29.1
+[2026-07-10 20:37:31] Available_RAM: 1668 MB
+[2026-07-10 20:37:31] CPU_Usage: 20.7%
+[2026-07-10 20:37:38] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:47.6 CPU_StdDev:27.7 CPU_Predicted:28.4
+[2026-07-10 20:37:41] Available_RAM: 1687 MB
+[2026-07-10 20:37:41] CPU_Usage: 19.8%
+[2026-07-10 20:37:48] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:47.3 CPU_StdDev:27.7 CPU_Predicted:27.6
+[2026-07-10 20:37:51] Available_RAM: 1707 MB
+[2026-07-10 20:37:51] CPU_Usage: 21.7%
+[2026-07-10 20:37:58] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:47.0 CPU_StdDev:27.7 CPU_Predicted:27.0
+[2026-07-10 20:38:00] Disk_Free_C: 40.23 GB
+[2026-07-10 20:38:01] Available_RAM: 1675 MB
+[2026-07-10 20:38:01] CPU_Usage: 15.3%
+[2026-07-10 20:38:08] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:47.2 CPU_StdDev:27.5 CPU_Predicted:24.8
+[2026-07-10 20:38:12] Available_RAM: 1694 MB
+[2026-07-10 20:38:12] CPU_Usage: 15.0%
+[2026-07-10 20:38:18] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:46.9 CPU_StdDev:27.7 CPU_Predicted:23.5
+[2026-07-10 20:38:22] Available_RAM: 1689 MB
+[2026-07-10 20:38:22] CPU_Usage: 11.9%
+[2026-07-10 20:38:28] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:46.5 CPU_StdDev:27.9 CPU_Predicted:22.1
+[2026-07-10 20:38:32] Available_RAM: 1700 MB
+[2026-07-10 20:38:32] CPU_Usage: 12.2%
+[2026-07-10 20:38:38] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:46.1 CPU_StdDev:28.1 CPU_Predicted:20.8
+[2026-07-10 20:38:42] Available_RAM: 1686 MB
+[2026-07-10 20:38:42] CPU_Usage: 32.4%
+[2026-07-10 20:38:48] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:45.6 CPU_StdDev:27.9 CPU_Predicted:21.0
+[2026-07-10 20:38:52] Available_RAM: 1649 MB
+[2026-07-10 20:38:52] CPU_Usage: 31.1%
+[2026-07-10 20:38:58] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:45.0 CPU_StdDev:27.5 CPU_Predicted:21.5
+[2026-07-10 20:39:01] Disk_Free_C: 40.23 GB
+[2026-07-10 20:39:02] Available_RAM: 1630 MB
+[2026-07-10 20:39:02] CPU_Usage: 31.6%
+[2026-07-10 20:39:08] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:44.3 CPU_StdDev:27.0 CPU_Predicted:22.0
+[2026-07-10 20:39:12] Available_RAM: 1592 MB
+[2026-07-10 20:39:12] CPU_Usage: 17.6%
+[2026-07-10 20:39:18] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:43.6 CPU_StdDev:26.8 CPU_Predicted:21.9
+[2026-07-10 20:39:22] Available_RAM: 1588 MB
+[2026-07-10 20:39:22] CPU_Usage: 29.2%
+[2026-07-10 20:39:28] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:43.0 CPU_StdDev:26.4 CPU_Predicted:22.2
+[2026-07-10 20:39:32] Available_RAM: 1548 MB
+[2026-07-10 20:39:32] CPU_Usage: 30.4%
+[2026-07-10 20:39:38] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:42.4 CPU_StdDev:25.9 CPU_Predicted:22.8
+[2026-07-10 20:39:43] CPU_Usage: 45.0%
+[2026-07-10 20:39:43] Available_RAM: 1566 MB
+[2026-07-10 20:39:48] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:42.0 CPU_StdDev:25.6 CPU_Predicted:23.7
+[2026-07-10 20:39:53] Available_RAM: 1584 MB
+[2026-07-10 20:39:53] CPU_Usage: 21.1%
+[2026-07-10 20:39:58] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:41.4 CPU_StdDev:25.3 CPU_Predicted:23.7
+[2026-07-10 20:40:01] Disk_Free_C: 40.23 GB
+[2026-07-10 20:40:03] Available_RAM: 1631 MB
+[2026-07-10 20:40:03] CPU_Usage: 14.4%
+[2026-07-10 20:40:08] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:40.8 CPU_StdDev:25.2 CPU_Predicted:23.3
+[2026-07-10 20:40:13] Available_RAM: 1584 MB
+[2026-07-10 20:40:13] CPU_Usage: 21.4%
+[2026-07-10 20:40:18] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:40.0 CPU_StdDev:24.7 CPU_Predicted:23.7
+[2026-07-10 20:40:23] Available_RAM: 1507 MB
+[2026-07-10 20:40:23] CPU_Usage: 22.0%
+[2026-07-10 20:40:28] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:39.4 CPU_StdDev:24.4 CPU_Predicted:23.9
+[2026-07-10 20:40:33] CPU_Usage: 30.5%
+[2026-07-10 20:40:33] Available_RAM: 1467 MB
+[2026-07-10 20:40:38] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:39.0 CPU_StdDev:24.2 CPU_Predicted:24.2
+[2026-07-10 20:40:43] Available_RAM: 1532 MB
+[2026-07-10 20:40:43] CPU_Usage: 26.2%
+[2026-07-10 20:40:48] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:38.4 CPU_StdDev:23.8 CPU_Predicted:24.5
+[2026-07-10 20:40:53] Available_RAM: 1410 MB
+[2026-07-10 20:40:53] CPU_Usage: 26.0%
+[2026-07-10 20:40:58] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:37.8 CPU_StdDev:23.1 CPU_Predicted:25.2
+[2026-07-10 20:41:01] Disk_Free_C: 40.22 GB
+[2026-07-10 20:41:03] Available_RAM: 1370 MB
+[2026-07-10 20:41:03] CPU_Usage: 26.7%
+[2026-07-10 20:41:08] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:37.3 CPU_StdDev:22.8 CPU_Predicted:25.6
+[2026-07-10 20:41:13] Available_RAM: 1377 MB
+[2026-07-10 20:41:13] CPU_Usage: 16.1%
+[2026-07-10 20:41:18] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:36.5 CPU_StdDev:22.3 CPU_Predicted:25.8
+[2026-07-10 20:41:24] Available_RAM: 1372 MB
+[2026-07-10 20:41:24] CPU_Usage: 17.7%
+[2026-07-10 20:41:28] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:35.9 CPU_StdDev:22.0 CPU_Predicted:25.9
+[2026-07-10 20:41:34] Available_RAM: 1383 MB
+[2026-07-10 20:41:34] CPU_Usage: 17.2%
+[2026-07-10 20:41:38] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:35.6 CPU_StdDev:22.0 CPU_Predicted:25.4
+[2026-07-10 20:41:44] Available_RAM: 1392 MB
+[2026-07-10 20:41:44] CPU_Usage: 9.9%
+[2026-07-10 20:41:48] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:35.3 CPU_StdDev:22.2 CPU_Predicted:24.6
+[2026-07-10 20:41:54] Available_RAM: 1426 MB
+[2026-07-10 20:41:54] CPU_Usage: 8.0%
+[2026-07-10 20:41:58] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:34.9 CPU_StdDev:22.3 CPU_Predicted:23.7
+[2026-07-10 20:42:01] Disk_Free_C: 40.23 GB
+[2026-07-10 20:42:04] Available_RAM: 1413 MB
+[2026-07-10 20:42:04] CPU_Usage: 10.4%
+[2026-07-10 20:42:08] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:34.6 CPU_StdDev:22.4 CPU_Predicted:22.8
+[2026-07-10 20:42:14] Available_RAM: 1426 MB
+[2026-07-10 20:42:14] CPU_Usage: 9.2%
+[2026-07-10 20:42:18] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:34.3 CPU_StdDev:22.6 CPU_Predicted:21.8
+[2026-07-10 20:42:24] Available_RAM: 1426 MB
+[2026-07-10 20:42:24] CPU_Usage: 10.7%
+[2026-07-10 20:42:28] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:34.0 CPU_StdDev:22.7 CPU_Predicted:21.0
+[2026-07-10 20:42:34] Available_RAM: 1424 MB
+[2026-07-10 20:42:34] CPU_Usage: 9.0%
+[2026-07-10 20:42:38] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:33.5 CPU_StdDev:22.7 CPU_Predicted:20.5
+[2026-07-10 20:42:44] Available_RAM: 1443 MB
+[2026-07-10 20:42:44] CPU_Usage: 10.7%
+[2026-07-10 20:42:48] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:33.1 CPU_StdDev:22.7 CPU_Predicted:20.1
+[2026-07-10 20:42:55] Available_RAM: 1400 MB
+[2026-07-10 20:42:55] CPU_Usage: 21.5%
+[2026-07-10 20:42:58] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:32.6 CPU_StdDev:22.4 CPU_Predicted:20.4
+[2026-07-10 20:43:01] Disk_Free_C: 40.23 GB
+[2026-07-10 20:43:05] Available_RAM: 1385 MB
+[2026-07-10 20:43:05] CPU_Usage: 51.2%
+[2026-07-10 20:43:08] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:32.9 CPU_StdDev:22.4 CPU_Predicted:20.9
+[2026-07-10 20:43:15] Available_RAM: 1345 MB
+[2026-07-10 20:43:15] CPU_Usage: 19.5%
+[2026-07-10 20:43:18] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:32.9 CPU_StdDev:22.4 CPU_Predicted:20.1
+[2026-07-10 20:43:25] Available_RAM: 1370 MB
+[2026-07-10 20:43:25] CPU_Usage: 9.3%
+[2026-07-10 20:43:28] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:32.8 CPU_StdDev:22.5 CPU_Predicted:18.8
+[2026-07-10 20:43:35] Available_RAM: 1364 MB
+[2026-07-10 20:43:35] CPU_Usage: 9.9%
+[2026-07-10 20:43:38] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:32.8 CPU_StdDev:22.5 CPU_Predicted:17.5
+[2026-07-10 20:43:45] Available_RAM: 1303 MB
+[2026-07-10 20:43:45] CPU_Usage: 20.5%
+[2026-07-10 20:43:48] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:32.9 CPU_StdDev:22.4 CPU_Predicted:16.5
+[2026-07-10 20:43:55] CPU_Usage: 43.1%
+[2026-07-10 20:43:55] Available_RAM: 1252 MB
+[2026-07-10 20:43:58] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:33.2 CPU_StdDev:22.4 CPU_Predicted:16.5
+[2026-07-10 20:44:01] Disk_Free_C: 40.23 GB
+[2026-07-10 20:44:05] Available_RAM: 1150 MB
+[2026-07-10 20:44:05] CPU_Usage: 33.5%
+[2026-07-10 20:44:08] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:33.4 CPU_StdDev:22.2 CPU_Predicted:16.1
+[2026-07-10 20:44:15] Available_RAM: 1238 MB
+[2026-07-10 20:44:15] CPU_Usage: 19.1%
+[2026-07-10 20:44:18] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:33.5 CPU_StdDev:22.2 CPU_Predicted:15.0
+[2026-07-10 20:44:25] Available_RAM: 1177 MB
+[2026-07-10 20:44:25] CPU_Usage: 35.8%
+[2026-07-10 20:44:28] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:33.8 CPU_StdDev:22.1 CPU_Predicted:14.6
+[2026-07-10 20:44:36] Available_RAM: 1347 MB
+[2026-07-10 20:44:36] CPU_Usage: 46.9%
+[2026-07-10 20:44:38] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:34.1 CPU_StdDev:22.0 CPU_Predicted:14.8
+[2026-07-10 20:44:46] Available_RAM: 1513 MB
+[2026-07-10 20:44:46] CPU_Usage: 18.5%
+[2026-07-10 20:44:48] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:34.1 CPU_StdDev:22.0 CPU_Predicted:13.7
+[2026-07-10 20:44:56] Available_RAM: 1492 MB
+[2026-07-10 20:44:56] CPU_Usage: 15.4%
+[2026-07-10 20:44:58] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:34.1 CPU_StdDev:22.0 CPU_Predicted:12.6
+[2026-07-10 20:45:01] Disk_Free_C: 40.23 GB
+[2026-07-10 20:45:06] Available_RAM: 1503 MB
+[2026-07-10 20:45:06] CPU_Usage: 14.4%
+[2026-07-10 20:45:08] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:34.2 CPU_StdDev:21.9 CPU_Predicted:11.3
+[2026-07-10 20:45:16] Available_RAM: 1496 MB
+[2026-07-10 20:45:16] CPU_Usage: 16.0%
+[2026-07-10 20:45:18] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:34.0 CPU_StdDev:22.0 CPU_Predicted:10.5
+[2026-07-10 20:45:26] Available_RAM: 1512 MB
+[2026-07-10 20:45:26] CPU_Usage: 15.0%
+[2026-07-10 20:45:28] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:33.8 CPU_StdDev:22.1 CPU_Predicted:9.9
+[2026-07-10 20:45:36] Available_RAM: 1459 MB
+[2026-07-10 20:45:36] CPU_Usage: 18.7%
+[2026-07-10 20:45:38] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:33.3 CPU_StdDev:21.9 CPU_Predicted:9.9
+[2026-07-10 20:45:46] Available_RAM: 1411 MB
+[2026-07-10 20:45:46] CPU_Usage: 26.5%
+[2026-07-10 20:45:48] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:33.2 CPU_StdDev:21.9 CPU_Predicted:9.6
+[2026-07-10 20:45:56] Available_RAM: 1410 MB
+[2026-07-10 20:45:56] CPU_Usage: 11.2%
+[2026-07-10 20:45:58] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:33.0 CPU_StdDev:22.0 CPU_Predicted:8.7
+[2026-07-10 20:46:02] Disk_Free_C: 40.23 GB
+[2026-07-10 20:46:06] Available_RAM: 1393 MB
+[2026-07-10 20:46:06] CPU_Usage: 17.7%
+[2026-07-10 20:46:08] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:32.6 CPU_StdDev:22.0 CPU_Predicted:8.6
+[2026-07-10 20:46:17] Available_RAM: 1332 MB
+[2026-07-10 20:46:17] CPU_Usage: 33.1%
+[2026-07-10 20:46:18] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:32.4 CPU_StdDev:21.8 CPU_Predicted:9.1
+[2026-07-10 20:46:27] CPU_Usage: 24.4%
+[2026-07-10 20:46:27] Available_RAM: 1333 MB
+[2026-07-10 20:46:28] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:32.0 CPU_StdDev:21.6 CPU_Predicted:9.4
+[2026-07-10 20:46:37] Available_RAM: 1353 MB
+[2026-07-10 20:46:37] CPU_Usage: 18.7%
+[2026-07-10 20:46:38] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:31.8 CPU_StdDev:21.6 CPU_Predicted:9.1
+[2026-07-10 20:46:47] Available_RAM: 1351 MB
+[2026-07-10 20:46:47] CPU_Usage: 17.3%
+[2026-07-10 20:46:48] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:31.5 CPU_StdDev:21.7 CPU_Predicted:8.8
+[2026-07-10 20:46:57] Available_RAM: 1367 MB
+[2026-07-10 20:46:57] CPU_Usage: 16.6%
+[2026-07-10 20:46:58] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:31.2 CPU_StdDev:21.7 CPU_Predicted:8.5
+[2026-07-10 20:47:02] Disk_Free_C: 40.22 GB
+[2026-07-10 20:47:07] Available_RAM: 1359 MB
+[2026-07-10 20:47:07] CPU_Usage: 31.2%
+[2026-07-10 20:47:08] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:31.0 CPU_StdDev:21.6 CPU_Predicted:8.9
+[2026-07-10 20:47:17] Available_RAM: 1355 MB
+[2026-07-10 20:47:17] CPU_Usage: 24.6%
+[2026-07-10 20:47:18] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:30.5 CPU_StdDev:21.1 CPU_Predicted:9.5
+[2026-07-10 20:47:27] Available_RAM: 1346 MB
+[2026-07-10 20:47:27] CPU_Usage: 19.0%
+[2026-07-10 20:47:28] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:30.0 CPU_StdDev:20.8 CPU_Predicted:9.8
+[2026-07-10 20:47:38] Available_RAM: 1035 MB
+[2026-07-10 20:47:38] CPU_Usage: 54.5%
+[2026-07-10 20:47:38] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:30.0 CPU_StdDev:20.8 CPU_Predicted:11.4
+[2026-07-10 20:47:48] Available_RAM: 1072 MB
+[2026-07-10 20:47:48] CPU_Usage: 18.3%
+[2026-07-10 20:47:48] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:29.4 CPU_StdDev:20.2 CPU_Predicted:11.9
+[2026-07-10 20:47:58] Available_RAM: 1055 MB
+[2026-07-10 20:47:58] CPU_Usage: 22.6%
+[2026-07-10 20:47:58] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:28.7 CPU_StdDev:19.2 CPU_Predicted:13.0
+[2026-07-10 20:48:02] Disk_Free_C: 40.22 GB
+[2026-07-10 20:48:08] Available_RAM: 1102 MB
+[2026-07-10 20:48:08] CPU_Usage: 18.7%
+[2026-07-10 20:48:08] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:28.3 CPU_StdDev:19.0 CPU_Predicted:13.1
+[2026-07-10 20:48:18] Available_RAM: 1117 MB
+[2026-07-10 20:48:18] CPU_Usage: 18.8%
+[2026-07-10 20:48:18] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:28.0 CPU_StdDev:18.9 CPU_Predicted:13.2
+[2026-07-10 20:48:28] Available_RAM: 1108 MB
+[2026-07-10 20:48:28] CPU_Usage: 14.7%
+[2026-07-10 20:48:28] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:27.8 CPU_StdDev:18.9 CPU_Predicted:12.8
+[2026-07-10 20:48:38] Available_RAM: 1046 MB
+[2026-07-10 20:48:38] CPU_Usage: 19.2%
+[2026-07-10 20:48:38] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:27.8 CPU_StdDev:19.0 CPU_Predicted:12.4
+[2026-07-10 20:48:48] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:27.8 CPU_StdDev:19.0 CPU_Predicted:12.4
+[2026-07-10 20:48:48] Available_RAM: 1183 MB
+[2026-07-10 20:48:48] CPU_Usage: 19.7%
+[2026-07-10 20:48:58] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:27.6 CPU_StdDev:19.0 CPU_Predicted:12.3
+[2026-07-10 20:48:58] Available_RAM: 1121 MB
+[2026-07-10 20:48:58] CPU_Usage: 38.4%
+[2026-07-10 20:49:02] Disk_Free_C: 40.22 GB
+[2026-07-10 20:49:08] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:27.6 CPU_StdDev:19.0 CPU_Predicted:12.9
+[2026-07-10 20:49:08] Available_RAM: 1082 MB
+[2026-07-10 20:49:08] CPU_Usage: 43.7%
+[2026-07-10 20:49:18] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:27.4 CPU_StdDev:18.7 CPU_Predicted:14.3
+[2026-07-10 20:49:19] Available_RAM: 1076 MB
+[2026-07-10 20:49:19] CPU_Usage: 46.3%
+[2026-07-10 20:49:28] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:27.2 CPU_StdDev:18.4 CPU_Predicted:15.8
+[2026-07-10 20:49:29] Available_RAM: 1132 MB
+[2026-07-10 20:49:29] CPU_Usage: 32.9%
+[2026-07-10 20:49:38] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:26.9 CPU_StdDev:18.0 CPU_Predicted:16.9
+[2026-07-10 20:49:39] Available_RAM: 1002 MB
+[2026-07-10 20:49:39] CPU_Usage: 41.5%
+[2026-07-10 20:49:48] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:26.8 CPU_StdDev:17.9 CPU_Predicted:17.9
+[2026-07-10 20:49:49] Available_RAM: 1171 MB
+[2026-07-10 20:49:49] CPU_Usage: 30.5%
+[2026-07-10 20:49:58] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:26.3 CPU_StdDev:17.2 CPU_Predicted:19.1
+[2026-07-10 20:49:59] Available_RAM: 1170 MB
+[2026-07-10 20:49:59] CPU_Usage: 28.8%
+[2026-07-10 20:50:03] Disk_Free_C: 40.22 GB
+[2026-07-10 20:50:08] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:25.9 CPU_StdDev:16.6 CPU_Predicted:20.1
+[2026-07-10 20:50:09] Available_RAM: 1147 MB
+[2026-07-10 20:50:09] CPU_Usage: 32.8%
+[2026-07-10 20:50:18] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:25.5 CPU_StdDev:16.0 CPU_Predicted:21.3
+[2026-07-10 20:50:19] Available_RAM: 1178 MB
+[2026-07-10 20:50:19] CPU_Usage: 24.0%
+[2026-07-10 20:50:28] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:25.0 CPU_StdDev:15.0 CPU_Predicted:22.4
+[2026-07-10 20:50:29] Available_RAM: 1136 MB
+[2026-07-10 20:50:29] CPU_Usage: 27.3%
+[2026-07-10 20:50:38] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:24.5 CPU_StdDev:14.3 CPU_Predicted:23.4
+[2026-07-10 20:50:40] Available_RAM: 1172 MB
+[2026-07-10 20:50:40] CPU_Usage: 23.0%
+[2026-07-10 20:50:48] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:24.1 CPU_StdDev:13.6 CPU_Predicted:24.3
+[2026-07-10 20:50:50] Available_RAM: 1106 MB
+[2026-07-10 20:50:50] CPU_Usage: 21.8%
+[2026-07-10 20:50:58] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:23.5 CPU_StdDev:12.3 CPU_Predicted:25.3
+[2026-07-10 20:51:00] Available_RAM: 1003 MB
+[2026-07-10 20:51:00] CPU_Usage: 54.4%
+[2026-07-10 20:51:03] Disk_Free_C: 40.22 GB
+[2026-07-10 20:51:08] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:23.2 CPU_StdDev:11.1 CPU_Predicted:27.8
+[2026-07-10 20:51:10] Available_RAM: 985 MB
+[2026-07-10 20:51:10] CPU_Usage: 37.8%
+[2026-07-10 20:51:18] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:23.2 CPU_StdDev:11.2 CPU_Predicted:28.6
+[2026-07-10 20:51:20] Available_RAM: 943 MB
+[2026-07-10 20:51:20] CPU_Usage: 40.1%
+[2026-07-10 20:51:28] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:23.5 CPU_StdDev:11.2 CPU_Predicted:29.1
+[2026-07-10 20:51:30] Available_RAM: 979 MB
+[2026-07-10 20:51:30] CPU_Usage: 17.9%
+[2026-07-10 20:51:38] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:23.5 CPU_StdDev:11.2 CPU_Predicted:28.7
+[2026-07-10 20:51:40] Available_RAM: 979 MB
+[2026-07-10 20:51:40] CPU_Usage: 34.5%
+[2026-07-10 20:51:48] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:23.3 CPU_StdDev:10.8 CPU_Predicted:29.7
+[2026-07-10 20:51:50] Available_RAM: 1000 MB
+[2026-07-10 20:51:50] CPU_Usage: 26.8%
+[2026-07-10 20:51:58] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:23.3 CPU_StdDev:10.8 CPU_Predicted:30.0
+[2026-07-10 20:52:01] Available_RAM: 995 MB
+[2026-07-10 20:52:01] CPU_Usage: 33.6%
+[2026-07-10 20:52:03] Disk_Free_C: 40.21 GB
+[2026-07-10 20:52:08] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:23.5 CPU_StdDev:10.8 CPU_Predicted:30.2
+[2026-07-10 20:52:11] Available_RAM: 1016 MB
+[2026-07-10 20:52:11] CPU_Usage: 31.9%
+[2026-07-10 20:52:18] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:23.7 CPU_StdDev:10.8 CPU_Predicted:30.4
+[2026-07-10 20:52:21] Available_RAM: 1000 MB
+[2026-07-10 20:52:21] CPU_Usage: 30.1%
+[2026-07-10 20:52:28] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:23.9 CPU_StdDev:10.7 CPU_Predicted:30.4
+[2026-07-10 20:52:31] Available_RAM: 1012 MB
+[2026-07-10 20:52:31] CPU_Usage: 25.6%
+[2026-07-10 20:52:38] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:24.0 CPU_StdDev:10.7 CPU_Predicted:30.3
+[2026-07-10 20:52:41] Available_RAM: 988 MB
+[2026-07-10 20:52:41] CPU_Usage: 24.0%
+[2026-07-10 20:52:48] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:24.0 CPU_StdDev:10.7 CPU_Predicted:30.2
+[2026-07-10 20:52:52] Available_RAM: 994 MB
+[2026-07-10 20:52:52] CPU_Usage: 37.6%
+[2026-07-10 20:52:58] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:24.2 CPU_StdDev:10.7 CPU_Predicted:30.5
+[2026-07-10 20:53:02] Available_RAM: 995 MB
+[2026-07-10 20:53:02] CPU_Usage: 31.5%
+[2026-07-10 20:53:03] Disk_Free_C: 40.20 GB
+[2026-07-10 20:53:08] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:24.4 CPU_StdDev:10.7 CPU_Predicted:30.6
+[2026-07-10 20:53:12] Available_RAM: 981 MB
+[2026-07-10 20:53:12] CPU_Usage: 25.0%
+[2026-07-10 20:53:18] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:24.5 CPU_StdDev:10.6 CPU_Predicted:30.4
+[2026-07-10 20:53:22] Available_RAM: 983 MB
+[2026-07-10 20:53:22] CPU_Usage: 27.9%
+[2026-07-10 20:53:28] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:24.5 CPU_StdDev:10.6 CPU_Predicted:30.6
+[2026-07-10 20:53:32] Available_RAM: 983 MB
+[2026-07-10 20:53:32] CPU_Usage: 27.5%
+[2026-07-10 20:53:38] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:24.5 CPU_StdDev:10.6 CPU_Predicted:30.9
+[2026-07-10 20:53:43] Available_RAM: 985 MB
+[2026-07-10 20:53:43] CPU_Usage: 31.0%
+[2026-07-10 20:53:48] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:24.6 CPU_StdDev:10.6 CPU_Predicted:31.0
+[2026-07-10 20:53:53] Available_RAM: 980 MB
+[2026-07-10 20:53:53] CPU_Usage: 23.6%
+[2026-07-10 20:53:58] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:24.6 CPU_StdDev:10.6 CPU_Predicted:31.0
+[2026-07-10 20:54:03] Available_RAM: 976 MB
+[2026-07-10 20:54:03] CPU_Usage: 32.4%
+[2026-07-10 20:54:03] Disk_Free_C: 40.18 GB
+[2026-07-10 20:54:08] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:24.8 CPU_StdDev:10.6 CPU_Predicted:31.1
+[2026-07-10 20:54:13] Available_RAM: 970 MB
+[2026-07-10 20:54:13] CPU_Usage: 37.1%
+[2026-07-10 20:54:18] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:25.0 CPU_StdDev:10.6 CPU_Predicted:31.4
+[2026-07-10 20:54:23] CPU_Usage: 31.7%
+[2026-07-10 20:54:23] Available_RAM: 979 MB
+[2026-07-10 20:54:28] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:25.1 CPU_StdDev:10.6 CPU_Predicted:31.6
+[2026-07-10 20:54:33] Available_RAM: 1112 MB
+[2026-07-10 20:54:33] CPU_Usage: 28.0%
+[2026-07-10 20:54:38] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:25.2 CPU_StdDev:10.6 CPU_Predicted:31.6
+[2026-07-10 20:54:44] Available_RAM: 1114 MB
+[2026-07-10 20:54:44] CPU_Usage: 68.7%
+[2026-07-10 20:54:48] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:25.6 CPU_StdDev:11.5 CPU_Predicted:33.3
+[2026-07-10 20:54:54] Available_RAM: 1115 MB
+[2026-07-10 20:54:54] CPU_Usage: 30.6%
+[2026-07-10 20:54:58] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:25.8 CPU_StdDev:11.4 CPU_Predicted:33.3
+[2026-07-10 20:55:04] Available_RAM: 1149 MB
+[2026-07-10 20:55:04] CPU_Usage: 22.3%
+[2026-07-10 20:55:04] Disk_Free_C: 40.17 GB
+[2026-07-10 20:55:08] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:25.9 CPU_StdDev:11.4 CPU_Predicted:32.9
+[2026-07-10 20:55:14] Available_RAM: 1098 MB
+[2026-07-10 20:55:14] CPU_Usage: 38.6%
+[2026-07-10 20:55:18] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:26.1 CPU_StdDev:11.4 CPU_Predicted:33.1
+[2026-07-10 20:55:24] Available_RAM: 1103 MB
+[2026-07-10 20:55:24] CPU_Usage: 38.5%
+[2026-07-10 20:55:28] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:26.4 CPU_StdDev:11.3 CPU_Predicted:33.4
+[2026-07-10 20:55:35] Available_RAM: 1119 MB
+[2026-07-10 20:55:35] CPU_Usage: 25.3%
+[2026-07-10 20:55:38] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:26.3 CPU_StdDev:11.3 CPU_Predicted:33.4
+[2026-07-10 20:55:45] CPU_Usage: 40.5%
+[2026-07-10 20:55:45] Available_RAM: 1073 MB
+[2026-07-10 20:55:48] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:26.4 CPU_StdDev:11.4 CPU_Predicted:34.1
+[2026-07-10 20:55:55] Available_RAM: 1089 MB
+[2026-07-10 20:55:55] CPU_Usage: 30.9%
+[2026-07-10 20:55:58] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:26.4 CPU_StdDev:11.4 CPU_Predicted:34.4
+[2026-07-10 20:56:04] Disk_Free_C: 40.15 GB
+[2026-07-10 20:56:05] Available_RAM: 1071 MB
+[2026-07-10 20:56:05] CPU_Usage: 27.4%
+[2026-07-10 20:56:08] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:26.5 CPU_StdDev:11.4 CPU_Predicted:34.2
+[2026-07-10 20:56:15] Available_RAM: 1108 MB
+[2026-07-10 20:56:15] CPU_Usage: 15.2%
+[2026-07-10 20:56:18] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:26.4 CPU_StdDev:11.4 CPU_Predicted:33.8
+[2026-07-10 20:56:25] Available_RAM: 1067 MB
+[2026-07-10 20:56:25] CPU_Usage: 28.4%
+[2026-07-10 20:56:28] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:26.3 CPU_StdDev:11.4 CPU_Predicted:34.0
+[2026-07-10 20:56:35] Available_RAM: 1202 MB
+[2026-07-10 20:56:35] CPU_Usage: 41.0%
+[2026-07-10 20:56:38] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:26.3 CPU_StdDev:11.4 CPU_Predicted:35.0
+[2026-07-10 20:56:46] Available_RAM: 1186 MB
+[2026-07-10 20:56:46] CPU_Usage: 48.6%
+[2026-07-10 20:56:49] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:26.6 CPU_StdDev:11.6 CPU_Predicted:35.8
+[2026-07-10 20:56:56] CPU_Usage: 27.4%
+[2026-07-10 20:56:56] Available_RAM: 1225 MB
+[2026-07-10 20:56:59] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:26.7 CPU_StdDev:11.5 CPU_Predicted:35.5
+[2026-07-10 20:57:04] Disk_Free_C: 40.15 GB
+[2026-07-10 20:57:06] Available_RAM: 1033 MB
+[2026-07-10 20:57:06] CPU_Usage: 21.2%
+[2026-07-10 20:57:09] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:26.7 CPU_StdDev:11.5 CPU_Predicted:35.2
+[2026-07-10 20:57:16] Available_RAM: 1043 MB
+[2026-07-10 20:57:16] CPU_Usage: 41.8%
+[2026-07-10 20:57:19] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:26.9 CPU_StdDev:11.6 CPU_Predicted:35.7
+[2026-07-10 20:57:26] Available_RAM: 1058 MB
+[2026-07-10 20:57:26] CPU_Usage: 30.2%
+[2026-07-10 20:57:29] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:26.9 CPU_StdDev:11.6 CPU_Predicted:35.9
+[2026-07-10 20:57:36] Available_RAM: 952 MB
+[2026-07-10 20:57:36] CPU_Usage: 45.1%
+[2026-07-10 20:57:39] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:27.1 CPU_StdDev:11.7 CPU_Predicted:36.6
+[2026-07-10 20:57:46] Available_RAM: 1223 MB
+[2026-07-10 20:57:46] CPU_Usage: 68.4%
+[2026-07-10 20:57:49] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:27.5 CPU_StdDev:12.4 CPU_Predicted:38.3
+[2026-07-10 20:57:56] CPU_Usage: 47.0%
+[2026-07-10 20:57:56] Available_RAM: 1154 MB
+[2026-07-10 20:57:59] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:27.7 CPU_StdDev:12.6 CPU_Predicted:39.0
+[2026-07-10 20:58:05] Disk_Free_C: 40.14 GB
+[2026-07-10 20:58:07] Available_RAM: 1048 MB
+[2026-07-10 20:58:07] CPU_Usage: 48.2%
+[2026-07-10 20:58:09] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:28.0 CPU_StdDev:12.7 CPU_Predicted:39.6
+[2026-07-10 20:58:17] CPU_Usage: 37.1%
+[2026-07-10 20:58:17] Available_RAM: 1323 MB
+[2026-07-10 20:58:19] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:28.2 CPU_StdDev:12.7 CPU_Predicted:39.8
+[2026-07-10 20:58:27] CPU_Usage: 50.3%
+[2026-07-10 20:58:27] Available_RAM: 1145 MB
+[2026-07-10 20:58:29] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:28.6 CPU_StdDev:12.8 CPU_Predicted:40.4
+[2026-07-10 20:58:37] Available_RAM: 1267 MB
+[2026-07-10 20:58:37] CPU_Usage: 30.9%
+[2026-07-10 20:58:39] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:28.8 CPU_StdDev:12.7 CPU_Predicted:40.1

@@ -1,0 +1,8 @@
+com\cerberus\analytics\service\AnalyticsService$TrendData.class
+com\cerberus\analytics\entity\MetricRecord.class
+com\cerberus\analytics\service\AnalyticsService$DataPoint.class
+com\cerberus\analytics\AnalyticsApplication.class
+com\cerberus\analytics\repository\MetricRepository.class
+com\cerberus\analytics\service\AnalyticsService$Anomaly.class
+com\cerberus\analytics\service\AnalyticsService.class
+com\cerberus\analytics\controller\AnalyticsController.class
