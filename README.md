@@ -223,7 +223,8 @@ Contributions are welcome!
 git checkout -b feature/new-feature
 ```
 
-3. Commit your changes## 👨‍💻 Author
+3. Commit your changes
+## 👨‍💻 Author
 
 **Blessings B. Chongo**
 
