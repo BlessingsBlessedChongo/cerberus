@@ -1,0 +1,452 @@
+/* Color Scheme */
+:root {
+  --dark-bg: #0f172a;
+  --form-bg: #1e293b;
+  --text-primary: #e2e8f0;
+  --text-secondary: #94a3b8;
+  --accent-cyan: #38bdf8;
+  --accent-green: #00FFCC;
+  --error-red: #ef4444;
+  --border-color: #334155;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  background-color: var(--dark-bg);
+}
+
+/* Login Page Container */
+.login-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+  background-color: var(--dark-bg);
+  overflow: hidden;
+}
+
+/* ============================================
+   TERMINAL ANIMATION SECTION
+   ============================================ */
+
+.terminal-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  animation: terminalFadeOut 0.5s ease-in-out 7s forwards;
+}
+
+.terminal-box {
+  background-color: rgba(15, 23, 42, 0.95);
+  border: 2px solid var(--accent-cyan);
+  border-radius: 8px;
+  padding: 24px;
+  width: 90%;
+  max-width: 600px;
+  box-shadow: 0 0 40px rgba(56, 189, 248, 0.2);
+  font-family: 'Courier New', 'Courier', monospace;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.terminal-line {
+  color: var(--accent-green);
+  min-height: 24px;
+  animation: lineReveal 0.5s ease-in-out, lineHide 0.5s ease-in-out 2s;
+}
+
+.cursor {
+  display: inline-block;
+  width: 10px;
+  height: 20px;
+  background-color: var(--accent-green);
+  margin-left: 4px;
+  animation: blink 1s step-start infinite;
+}
+
+@keyframes lineReveal {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes lineHide {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes blink {
+  0%, 49% {
+    opacity: 1;
+  }
+  50%, 100% {
+    opacity: 0;
+  }
+}
+
+@keyframes terminalFadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+/* ============================================
+   LOGIN INTERFACE SECTION
+   ============================================ */
+
+.login-interface {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  animation: fadeIn 0.8s ease-in-out 7s forwards;
+  opacity: 0;
+}
+
+.login-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  width: 100%;
+  max-width: 1000px;
+  align-items: center;
+  justify-items: center;
+}
+
+/* Left Side: Logo and Subtitle */
+.login-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.logo-section {
+  margin-bottom: 40px;
+}
+
+.cerberus-logo {
+  width: 200px;
+  height: 200px;
+  filter: drop-shadow(0 0 20px rgba(56, 189, 248, 0.3));
+  margin-bottom: 20px;
+}
+
+.logo-text {
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: var(--accent-cyan);
+  margin: 0;
+  text-shadow: 0 0 20px rgba(56, 189, 248, 0.5);
+}
+
+.logo-subtitle {
+  font-size: 24px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  color: var(--accent-green);
+  margin: 0;
+  text-shadow: 0 0 15px rgba(0, 255, 204, 0.3);
+}
+
+/* Right Side: Login Form */
+.login-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-form {
+  width: 100%;
+  max-width: 400px;
+  background-color: var(--form-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.form-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0 0 30px 0;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 14px;
+  background-color: rgba(15, 23, 42, 0.6);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  color: var(--text-primary);
+  font-family: inherit;
+  transition: all 0.3s ease;
+}
+
+.form-input::placeholder {
+  color: var(--text-secondary);
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: var(--accent-cyan);
+  background-color: rgba(15, 23, 42, 0.8);
+  box-shadow: 0 0 12px rgba(56, 189, 248, 0.2);
+}
+
+.form-input:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.error-message {
+  background-color: rgba(239, 68, 68, 0.1);
+  border: 1px solid var(--error-red);
+  border-radius: 8px;
+  color: var(--error-red);
+  padding: 12px 16px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.login-button {
+  width: 100%;
+  padding: 14px;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  background: linear-gradient(135deg, var(--accent-cyan) 0%, #0ea5e9 100%);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 10px;
+}
+
+.login-button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(56, 189, 248, 0.3);
+}
+
+.login-button:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.login-button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* ============================================
+   ANIMATIONS
+   ============================================ */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+
+/* Tablet and smaller */
+@media (max-width: 1024px) {
+  .login-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .cerberus-logo {
+    width: 150px;
+    height: 150px;
+  }
+
+  .logo-text {
+    font-size: 36px;
+  }
+
+  .logo-subtitle {
+    font-size: 18px;
+  }
+
+  .login-form {
+    max-width: 350px;
+  }
+
+  .terminal-box {
+    width: 95%;
+    padding: 20px;
+    font-size: 14px;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+  .login-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    justify-items: stretch;
+  }
+
+  .login-left {
+    margin-bottom: 0;
+  }
+
+  .cerberus-logo {
+    width: 120px;
+    height: 120px;
+  }
+
+  .logo-text {
+    font-size: 28px;
+    letter-spacing: 2px;
+  }
+
+  .logo-subtitle {
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
+
+  .login-right {
+    width: 100%;
+  }
+
+  .login-form {
+    width: 100%;
+    max-width: 100%;
+    padding: 30px 20px;
+  }
+
+  .form-label {
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+
+  .terminal-box {
+    width: 90%;
+    padding: 16px;
+    font-size: 12px;
+  }
+
+  .terminal-line {
+    min-height: 18px;
+  }
+
+  .cursor {
+    width: 8px;
+    height: 16px;
+  }
+}
+
+/* Small mobile */
+@media (max-width: 480px) {
+  .login-page {
+    padding: 10px;
+  }
+
+  .login-grid {
+    gap: 15px;
+  }
+
+  .cerberus-logo {
+    width: 100px;
+    height: 100px;
+  }
+
+  .logo-text {
+    font-size: 24px;
+  }
+
+  .logo-subtitle {
+    font-size: 14px;
+  }
+
+  .logo-section {
+    margin-bottom: 20px;
+  }
+
+  .login-form {
+    padding: 20px;
+  }
+
+  .form-group {
+    margin-bottom: 16px;
+  }
+
+  .form-input {
+    padding: 10px 12px;
+    font-size: 14px;
+  }
+
+  .login-button {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .terminal-box {
+    width: 95%;
+    padding: 12px;
+    font-size: 11px;
+    border-radius: 6px;
+  }
+
+  .terminal-line {
+    min-height: 16px;
+  }
+}
