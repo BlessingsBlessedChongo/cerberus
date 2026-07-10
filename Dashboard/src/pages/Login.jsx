@@ -11,7 +11,9 @@ export default function Login() {
   const [error, setError] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const [currentLine, setCurrentLine] = useState('');
+  const [showTerminal, setShowTerminal] = useState(true);
   const [showLogin, setShowLogin] = useState(false);
+  const [showCursor, setShowCursor] = useState(false);
   const { saveToken } = useContext(AuthContext);
   const navigate = useNavigate();
 
@@ -23,30 +25,87 @@ export default function Login() {
       '[CERBERUS] Three Heads. One Mission. Watch. Predict. Protect.',
     ];
 
+    // Timing configuration (in milliseconds)
+    const TYPING_SPEED = 20;      // ms per character when typing
+    const HOLD_TIME = 250;         // ms to hold full line before deletion
+    const DELETION_SPEED = 10;     // ms per character when deleting
+    const TERMINAL_FADE_DELAY = 300;   // ms after final deletion before terminal fades
+    const TERMINAL_FADE_DURATION = 300; // ms for terminal fade transition
+    const LOGIN_DELAY = 400;       // ms after terminal fades before login appears
+    const LOGIN_FADE_DURATION = 500; // ms for login form fade transition
+
     let lineIndex = 0;
+    let charIndex = 0;
+    let timeoutId = null;
 
-    const showLine = () => {
-      if (lineIndex < bootSequence.length) {
-        // Fade in and display line for 1.5 seconds
-        setCurrentLine(bootSequence[lineIndex]);
+    const animateLine = () => {
+      const currentSequence = bootSequence[lineIndex];
 
-        setTimeout(() => {
-          // Fade out line
-          setCurrentLine('');
-          lineIndex++;
+      // Phase 1: Typing - add one character at a time
+      const typeNextChar = () => {
+        if (charIndex < currentSequence.length) {
+          setCurrentLine(currentSequence.substring(0, charIndex + 1));
+          setShowCursor(true);
+          charIndex++;
+          timeoutId = setTimeout(typeNextChar, TYPING_SPEED);
+        } else {
+          // Typing complete, move to holding phase
+          setTimeout(holdLine, HOLD_TIME);
+        }
+      };
 
-          // Wait for fade out animation (0.5s) then show next line
-          setTimeout(showLine, 500);
-        }, 1500);
-      } else {
-        // All lines complete, fade out terminal and show login
-        setTimeout(() => {
-          setShowLogin(true);
-        }, 500);
-      }
+      // Phase 2: Hold - keep line visible
+      const holdLine = () => {
+        // Line stays visible, cursor still blinking
+        setShowCursor(true);
+        timeoutId = setTimeout(deleteLine, 0);
+      };
+
+      // Phase 3: Deletion - remove one character at a time
+      const deleteLine = () => {
+        let deleteCharIndex = currentSequence.length;
+        const deleteNextChar = () => {
+          if (deleteCharIndex > 0) {
+            deleteCharIndex--;
+            setCurrentLine(currentSequence.substring(0, deleteCharIndex));
+            setShowCursor(false); // Hide cursor during deletion
+            timeoutId = setTimeout(deleteNextChar, DELETION_SPEED);
+          } else {
+            // Line fully deleted
+            setCurrentLine('');
+            charIndex = 0;
+            lineIndex++;
+
+            if (lineIndex < bootSequence.length) {
+              // Proceed to next line immediately
+              animateLine();
+            } else {
+              // All lines complete - fade out terminal
+              timeoutId = setTimeout(() => {
+                setShowCursor(false);
+                timeoutId = setTimeout(() => {
+                  setShowTerminal(false);
+                  // After terminal fades out, wait before showing login
+                  timeoutId = setTimeout(() => {
+                    setShowLogin(true);
+                  }, LOGIN_DELAY);
+                }, TERMINAL_FADE_DURATION);
+              }, TERMINAL_FADE_DELAY);
+            }
+          }
+        };
+        deleteNextChar();
+      };
+
+      typeNextChar();
     };
 
-    showLine();
+    animateLine();
+
+    // Cleanup function
+    return () => {
+      if (timeoutId) clearTimeout(timeoutId);
+    };
   }, []);
 
   const handleSubmit = async (e) => {
@@ -84,12 +143,12 @@ export default function Login() {
   return (
     <div className="login-page">
       {/* Boot Sequence Terminal */}
-      {!showLogin && (
-        <div className="terminal-container">
+      {showTerminal && (
+        <div className={`terminal-container ${!showLogin ? '' : 'fadeOut'}`}>
           <div className="terminal-box">
             <div className="terminal-line">
               {currentLine}
-              {currentLine && <span className="cursor">_</span>}
+              {showCursor && <span className="cursor">_</span>}
             </div>
           </div>
         </div>
@@ -97,7 +156,7 @@ export default function Login() {
 
       {/* Login Interface */}
       {showLogin && (
-        <div className="login-interface">
+        <div className={`login-interface ${showLogin ? 'fadeIn' : ''}`}>
           <div className="login-grid">
             {/* Left Side: Logo */}
             <div className="login-left">
