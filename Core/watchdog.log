@@ -1,0 +1,14 @@
+=== CERBERUS CORE LOG ===
+Timestamp,Check,Value
+[2026-07-10 15:16:05] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:0.0 CPU_StdDev:0.0 CPU_Predicted:0.0
+[2026-07-10 15:16:05] Available_RAM: 1339 MB
+[2026-07-10 15:16:05] CPU_Usage: 0.0%
+[2026-07-10 15:16:15] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:0.0 CPU_StdDev:0.0 CPU_Predicted:0.0
+[2026-07-10 15:16:15] Available_RAM: 1347 MB
+[2026-07-10 15:16:15] CPU_Usage: 16.7%
+[2026-07-10 15:16:25] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:8.3 CPU_StdDev:11.8 CPU_Predicted:8.3
+[2026-07-10 15:16:25] Available_RAM: 1316 MB
+[2026-07-10 15:16:25] CPU_Usage: 14.6%
+[2026-07-10 15:16:35] METRICS_AGGREGATE Active_Threads:0 Pending_Tasks:0 CPU_Avg:10.4 CPU_StdDev:9.1 CPU_Predicted:10.4
+[2026-07-10 15:16:35] Available_RAM: 1277 MB
+[2026-07-10 15:16:35] CPU_Usage: 20.6%
